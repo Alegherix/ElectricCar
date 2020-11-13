@@ -1,0 +1,30 @@
+@import 'variables.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: var(--primaryGradient);
+}
+
+nav {
+  height: 80px;
+  background-color: var(--houseColor);
+  display: flex;
+  align-items: center;
+  ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 1.8rem;
+  }
+}
+
+.navlinks,
+#electric {
+  display: none;
+}
