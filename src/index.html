@@ -3,15 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../stylesheets/hamburger.css" />
     <link rel="stylesheet" href="../stylesheets/style.css" />
+
     <title>Electric</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li>Peugeot</li>
-          <li class="burger"></li>
+          <li><a href="#">Peugeot</a></li>
+          <li>
+            <button class="hamburger hamburger--emphatic" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </li>
           <li id="electric">Electric</li>
           <li>
             <div class="navlinks">
@@ -27,5 +40,14 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section>
+        <div class="heroContainer">
+          <p>You are Special</p>
+          <h1>Electric</h1>
+        </div>
+      </section>
+    </main>
   </body>
+  <script src="/scripts/app.js"></script>
 </html>

@@ -1,4 +1,4 @@
-@import 'variables.css';
+@import 'variables';
 
 * {
   box-sizing: border-box;
@@ -8,6 +8,7 @@
 
 body {
   background-image: var(--primaryGradient);
+  color: white;
 }
 
 nav {
@@ -21,6 +22,20 @@ nav {
     justify-content: space-between;
     list-style: none;
     padding: 0 1.8rem;
+
+    li {
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+main {
+  .heroContainer {
+    // 100vh minus naven's height:
+    height: calc(100vh - 80px);
   }
 }
 
