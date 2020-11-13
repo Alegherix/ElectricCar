@@ -148,12 +148,19 @@ main .heroContainer img {
   margin-left: 1.2rem;
 }
 
-.coloringContainer img {
+.carColorContainer img {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 .coloringContainer .colorPickerContainer {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.redDiamond,
+.blackDiamond,
+.whiteDiamond {
+  cursor: pointer;
 }
