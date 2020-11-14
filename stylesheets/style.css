@@ -202,6 +202,7 @@ main .heroContainer img {
 .signupInfoContainer form {
   display: flex;
   flex-direction: column;
+  height: 130px;
 }
 
 .signupInfoContainer input[type='email'] {
@@ -235,7 +236,7 @@ main .heroContainer img {
 /* Styles the sign up Button */
 .signupLabel {
   width: 188px;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   cursor: pointer;
 }
 
@@ -264,4 +265,28 @@ form input[type='submit'] {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 20px;
+}
+
+/* Share Styling */
+.horizontalSeparator {
+  height: 1px;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #c7c7c7;
+}
+
+.shareContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.shareContainer p {
+  margin-right: 1.5rem;
+  font-size: 24px;
+}
+
+.shareContainer p span {
+  color: white;
 }

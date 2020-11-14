@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
@@ -13,6 +14,7 @@
       href="https://cdn.rawgit.com/tonystar/float-label-css/v1.0.2/dist/float-label.min.css"
     />
     <link rel="stylesheet" href="../stylesheets/hamburger.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="../stylesheets/style.css" />
 
     <title>Electric</title>
@@ -115,7 +117,7 @@
             Sing up today and get a free cup holder when you preorder your own
             <span>Electric</span>
           </p>
-          <form action="">
+          <form action="" onsubmit="return validateForm(event);">
             <label class="has-float-label" for="email">
               <input type="email" placeholder=" " />
               <span>Enter you email adress</span>
@@ -127,13 +129,17 @@
                 <svg width="195" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="signupBtn" d="M35.5 1.5h-.687l-.448.52-28.5 33-2.142 2.48h157.98l.449-.54 27.5-33 2.051-2.46H35.5z" fill="#2A4D86" fill-opacity="0" stroke="#5183D3" stroke-width="3"/></svg>
                 <span class="signupText">Sign up</span>
               </div>
-         
              </label>
-           
-          </form>
+          </form> 
         </div>
       </div>
-      <div class="share"></div>
+      <div class="share">
+        <div class="horizontalSeparator"></div>
+        <div class="shareContainer">
+          <p><span>SHARE</span></p>
+          <i data-feather="share-2"></i>
+        </div>
+      </div>
 
       <footer></footer>
     </main>
