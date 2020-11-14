@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/tonystar/float-label-css/v1.0.2/dist/float-label.min.css"
+    />
     <link rel="stylesheet" href="../stylesheets/hamburger.css" />
     <link rel="stylesheet" href="../stylesheets/style.css" />
 
@@ -112,8 +116,20 @@
             <span>Electric</span>
           </p>
           <form action="">
-            <label for="email">Enter your email adress</label>
-            <input type="email" name="email" id="email" />
+            <label class="has-float-label" for="email">
+              <input type="email" placeholder=" " />
+              <span>Enter you email adress</span>
+              </input>
+            </label>
+            <label class="signupLabel">
+              <input type="submit">
+              <div class="signupContainer">
+                <svg width="195" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="signupBtn" d="M35.5 1.5h-.687l-.448.52-28.5 33-2.142 2.48h157.98l.449-.54 27.5-33 2.051-2.46H35.5z" fill="#2A4D86" fill-opacity="0" stroke="#5183D3" stroke-width="3"/></svg>
+                <span class="signupText">Sign up</span>
+              </div>
+         
+             </label>
+           
           </form>
         </div>
       </div>
