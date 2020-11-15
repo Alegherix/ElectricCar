@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/tonystar/float-label-css/v1.0.2/dist/float-label.min.css"
+    />
+    <link rel="stylesheet" href="../stylesheets/hamburger.css" />
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+
+    <title>Electric</title>
+  </head>
+  <body data-barba="wrapper">
+    <!-- Används enbart för Page Transitions -->
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <header>
+      <nav>
+        <ul>
+          <li class="logo"><a href="#">Peugeot</a></li>
+          <li id="electric">Electric</li>
+          <li>
+            <div class="navlinks">
+              <ul>
+                <li>Home</li>
+                <li>Exterior</li>
+                <li>Interior</li>
+                <li>Accessories</li>
+                <li>History</li>
+              </ul>
+              <li>
+                <button class="hamburger hamburger--emphatic" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+              </li>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main data-barba="container" data-barba-namespace="history">
+      <p>Hello Welcome to history</p>
+      <a href="index.html">back To Home</a>
+    </main>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
+    integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="/scripts/animations.js"></script>
+  <script src="/scripts/transitions.js"></script>
+  <script src="/scripts/app.js"></script>
+</html>

@@ -18,7 +18,17 @@
 
     <title>Electric</title>
   </head>
-  <body>
+  <body data-barba="wrapper">
+
+    <!-- Används enbart för Page Transitions -->
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
     <header>
       <nav>
         <ul>
@@ -45,7 +55,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main data-barba="container" data-barba-namespace="home">
       <section>
         <div class="heroContainer">
           <img
@@ -106,6 +116,7 @@
       </div>
       <div class="history">
         <h3 class="descHeader">History</h3>
+        <a href="history.html">Visit History</a>
       </div>
 
       <div class="signup">
@@ -148,7 +159,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
   <script src="/scripts/animations.js"></script>
+  <script src="/scripts/transitions.js"></script>
   <script src="/scripts/app.js"></script>
   
 </html>
