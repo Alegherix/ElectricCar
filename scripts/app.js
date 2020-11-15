@@ -14,6 +14,14 @@ const validateForm = (event) => {
     return false;
 }
 
+// Changes what type of car img is showing
+function changeImage(img) {
+    const carImg = document.querySelector(".electricColoringImg");
+    const colorRegex = new RegExp("(red)|(yellow)|(green)")
+    const buttonColor = img.src.match(colorRegex)[0];
+    carImg.src = carImg.src.replace(colorRegex, buttonColor)
+}
+
 const main = () => {
     addBurgerListener();
     feather.replace();  
