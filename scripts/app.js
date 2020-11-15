@@ -24,7 +24,7 @@ function changeImage(img) {
     const tl = gsap.timeline();
     tl.to(".electricColoringImg", {
         opacity: 0,
-        x: 200,
+        x: 300,
         duration: 0.5,
         onComplete: () =>  carImg.src = carImg.src.replace(colorRegex, buttonColor) 
     })

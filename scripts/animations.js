@@ -12,7 +12,7 @@ function triggerTextSlide (toAnimate, trigger) {
 }
 const animateDescText = () => {
     triggerTextSlide(".anim1", ".prodDescHeading");
-    triggerTextSlide(".anim2", ".safetyInfoContainer");
+    triggerTextSlide(".anim2", ".safetyHeading");
 }
 
 const animateHeader = () => {
@@ -38,7 +38,7 @@ const animateColoringTimeline = () => {
     gsap.from(".anim4", {scrollTrigger: {
         trigger: ".colorPickerContainer",
         start:"bottom 100%"
-    }, opacity: 0, duration: 1, stagger: 0.4, rotation: -360, y: 100,
+    }, opacity: 0, duration: 0.6, stagger: 0.2, rotation: -360, y: 100,
     ease:Expo.easeOut
     })    
 }
