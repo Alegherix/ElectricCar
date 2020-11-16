@@ -24,7 +24,7 @@ function delay(n) {
         setTimeout(() => {
             done();
         }, n);
-    });
+    });  0
 }
 
 function contentAnimation(){
