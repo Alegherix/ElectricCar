@@ -1,5 +1,6 @@
 /*# sourceMappingURL=style.css.map */
 @import url('variables.css');
+@import url('historyStyling.css');
 
 /* Default Styling */
 
@@ -308,7 +309,13 @@ a {
 .loadingScreen {
   position: relative;
   padding: 0 0 inherit 0;
-  background-color: rgb(31, 76, 145);
+  background: linear-gradient(
+    360deg,
+    #162133 0%,
+    #263856 44.27%,
+    #263856 55.73%,
+    #162133 100%
+  );
   width: 0%;
   height: 100%;
 }
@@ -322,3 +329,26 @@ a {
   z-index: 10;
   pointer-events: none;
 }
+
+/* History Page styling */
+/* .historyContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer {
+  padding: 0 2.2rem;
+}
+
+.textContainer h3 {
+  margin-top: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.textContainer:last-child {
+  margin-bottom: 2.6rem;
+}
+
+.imageContainer {
+  height: 260px;
+} */

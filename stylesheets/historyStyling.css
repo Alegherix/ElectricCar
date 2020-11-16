@@ -1,0 +1,22 @@
+.historyContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer {
+  padding: 0 2.2rem;
+}
+
+.textContainer h3 {
+  margin-top: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.textContainer:last-child {
+  margin-bottom: 2.6rem;
+}
+
+.imageContainer {
+  height: 260px;
+  margin: 2rem 0;
+}

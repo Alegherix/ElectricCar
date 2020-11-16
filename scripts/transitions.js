@@ -44,11 +44,16 @@ barba.init({
         },
 
         async enter(data){
-            // contentAnimation();
+            scrollToTop();
         },
 
         async once(data){
-            
+            scrollToTop();
         }
     }]
 })
+
+// Used for fixing page transitions that doesn't move scroll position.
+function scrollToTop(){
+    window.scrollTo(0,0);
+}
