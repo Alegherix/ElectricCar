@@ -52,33 +52,45 @@
     <main data-barba="container" data-barba-namespace="history">
       <div class="historyContainer">
         <div class="textContainer">
-          <h3>History</h3>
-          <p class="firstTextSection">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare nibh
-            pellentesque quis erat integer. Vitae dictum felis enim amet,
-            faucibus enim risus, aenean. Auctor pulvinar arcu condimentum
-            tincidunt scelerisque viverra orci. In in cm lacus tempus id in
-            imperdiet. Velit sit laoreet vulputate in gravida vitae tortor.
-            Gravida ultrices ornare quisque eget eget tortor sed odio. Urna,
-            duis consequat sem dui at. Lacus, eget quis volutpat auctor
-            porttitor. Lectus nulla non dignissim nisi. Aliquet libero in
-            facilisi volutpat
+          <h3 class="historyAnim">History</h3>
+          <p class="firstTextSection historyAnim">
+            The Peugeot family of Valentigney, Montbéliard, Franche-Comté,
+            France began in the manufacturing business in the 19th century. In
+            1842, they added production of coffee, pepper, and salt grinders.
+            The company's entry into the vehicle market was by means of
+            crinoline dresses, which used steel rods, leading to umbrella
+            frames, saw blades, chisels, wire wheels, and bicycles. Armand
+            Peugeot introduced his "Le Grand Bi" penny-farthing in 1882, along
+            with a range of other bicycles. The company's logo, initially a lion
+            walking on an arrow, symbolized the speed, strength and flexibility
+            of the Peugeot saw blades. The car company and bike company parted
+            ways in 1926 but Peugeot bicycles continued to be built until very
+            recently.
           </p>
         </div>
-        <div class="imageContainer">
-          <img src="/assets/greenTerra.png" alt="img" />
+        <div class="imageContainer historyAnim">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="/assets/engineCar_Top.png"
+            />
+            <img src="/assets/greenTerra.png" alt="img" />
+          </picture>
         </div>
-        <div class="textContainer">
+        <div class="textContainer historyAnim">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare nibh
-            pellentesque quis erat integer. Vitae dictum felis enim amet,
-            faucibus enim risus, aenean. Auctor pulvinar arcu condimentum
-            tincidunt scelerisque viverra orci. In in cm lacus tempus id in
-            imperdiet. Velit sit laoreet vulputate in gravida vitae tortor.
-            Gravida ultrices ornare quisque eget eget tortor sed odio. Urna,
-            duis consequat sem dui at. Lacus, eget quis volutpat auctor
-            porttitor. Lectus nulla non dignissim nisi. Aliquet libero in
-            facilisi volutpat at.
+            Peugeot was an early pioneer in motor racing, with Albert Lemaître
+            winning the world's first motor race, the Paris–Rouen, in a 3 hp
+            Peugeot. Five Peugeots qualified for the main event, and all
+            finished. Lemaître finished 3 min 30 sec behind the Comte de Dion
+            whose steam-powered car was ineligible for the official competition.
+            Three Peugeots were entered in the Paris–Bordeaux–Paris, where they
+            were beaten by Panhard's car (despite an average speed of 20.8 km/h
+            (12.9 mph) and taking the 31,500 franc prize. This also marked the
+            debut of Michelin pneumatic tyres in racing, also on a Peugeot; they
+            proved insufficiently durable. Nevertheless, the vehicles were still
+            very much horseless carriages in appearance and were steered by a
+            tiller.
           </p>
         </div>
       </div>
@@ -92,7 +104,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/@barba/core"></script>
-  <script src="/scripts/animations.js"></script>
-  <script src="/scripts/transitions.js"></script>
-  <script src="/scripts/app.js"></script>
+  <!-- <script src="/scripts/animations.js"></script> -->
+  <!-- <script src="/scripts/transitions.js"></script> -->
+  <script src="/scripts/historyAnimations.js"></script>
+  <!-- <script src="/scripts/app.js"></script> -->
 </html>
