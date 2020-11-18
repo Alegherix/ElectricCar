@@ -2,6 +2,8 @@
 @import url('variables.css');
 @import url('historyStyling.css');
 @import url('mobileFeatureCard.css');
+@import url('footer.css');
+@import url('footermedia.css');
 /* Default Styling */
 * {
   -webkit-box-sizing: border-box;
@@ -166,13 +168,6 @@ main .heroContainer img {
 }
 
 /* Technical Specification Styling */
-
-.history {
-  width: 100%;
-  height: 226px;
-  background-color: #262626;
-  margin-bottom: 2rem;
-}
 
 /* History  Styling */
 
