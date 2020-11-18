@@ -25,7 +25,7 @@ function changeImage(img) {
   tl.to('.electricColoringImg', {
     opacity: 0,
     x: 300,
-    duration: 0.5,
+    duration: 0.8,
     // ease: Power1.easeOut,
     onComplete: () =>
       (carImg.src = carImg.src.replace(colorRegex, buttonColor)),

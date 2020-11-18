@@ -2,17 +2,49 @@
   .signupInfoContainer {
     margin: 0 auto;
   }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15rem;
+  }
+
+  .coloringContainer {
+    width: 100%;
+    max-width: 1065px;
+    height: 555px;
+  }
+
+  .cupSide {
+    display: inline-block;
+    /* width: 200px;
+    height: 200px; */
+  }
+
+  .cupholderContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .cupholderContainer img {
+    width: 40%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  /*  */
   .overallDesc {
     display: flex;
+    height: 100%;
     justify-content: space-around;
   }
 
   .prodInfoContainer,
   .safetyInfoContainer {
     max-width: 40%;
+  }
+
+  .coloringContainer {
+    align-self: center;
   }
 }
