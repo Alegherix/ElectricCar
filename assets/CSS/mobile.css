@@ -1,0 +1,112 @@
+@media screen and (max-width:600px){
+
+    .fetureBtn{
+        height: 59px;
+        width: 303px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-left: auto;
+        top: -10px;
+    }
+    section.featureCard>figcaption>img{
+        position: absolute;
+        top: 20px;
+        left: 50px;
+    }
+    .featureCard img.tire{
+        z-index: 4;
+        left: 20px;
+        width:59px;
+        top:0;
+        left:0;
+    }
+    .featureCard img.tire::after{
+        content: '';
+        position: absolute;
+        bottom: 0%;
+        left: 5%;
+        width: 90%;
+        height: 8%;
+        border-radius: 50%;
+        
+    }
+    .featureCard span.btnTxt {
+        font-size: 18px;
+        display: flex;
+        position: absolute;
+        flex-wrap: wrap;
+        z-index: 3;
+        color: #fff;
+        top: 8px;
+        left: 120px;
+        max-width: 120px;
+        justify-content: center;
+        text-align: center;
+        height: 44px;
+        align-items: center;
+    }
+    .featureCard img.fetureArrowsHover {
+        top: -3px;
+        z-index: 2;
+        left: 21px;
+        clip-path: inset(0px 278px 0px 0px);
+    }
+    .featureCard img.drk {
+        top: 5px;
+        z-index: 0;
+        left: 30px;
+        box-shadow: 0px 4px 12px 0px black;
+    }
+    .fetureBtn:hover{
+        cursor: pointer;
+    }
+    .fetureBtn:hover img.tire{
+        animation-name:tire;
+        animation-duration:2s;
+        animation-fill-mode: forwards;
+    }
+    .fetureBtn:hover img.fetureArrowsHover{
+        animation-name:arrows;
+        animation-duration:2s;
+        animation-fill-mode: forwards;
+        /* box-shadow: 0px 4px 12px 0px black; */
+    }
+    .fetureBtn:hover img.drk{
+        animation-name:card;
+        animation-duration:2s;
+        animation-fill-mode: forwards;
+    }
+    body{
+        background: linear-gradient(270deg, #162133 0%, rgba(32, 47, 72, 0.9) 44.27%, rgba(32, 47, 72, 0.9) 55.73%, #162133 100%);
+    }
+    @keyframes tire{
+        0% {
+            transform: rotate3d(0, 0, 0);
+            left:20px;
+        }
+        100%{
+            transform: rotate3d(0, 0, 360, 5turn);
+            left:250px;
+        }
+    }
+    @keyframes arrows{
+        0% {
+            clip-path: inset(0px 274px 0px 0px);
+            
+        }
+        
+        100%{
+            clip-path: inset(0px 0px 0px 0px);
+            
+        }
+    }
+    @keyframes card{
+        0% {
+            box-shadow: 0px 0px 0px #FFFFFF;
+        }
+        100% {
+            box-shadow: 0px 0px 5px #FFFFFF;
+        }
+    }   
+}
