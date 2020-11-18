@@ -197,7 +197,8 @@ main .heroContainer img {
 /* Måste fixa, font size matchar ej med styling i Figma */
 
 .signupInfoContainer {
-  margin: 1.5rem;
+  padding: 1.5rem;
+  max-width: 768px;
 }
 
 .signupInfoContainer p {

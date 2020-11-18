@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) {
+  .signupInfoContainer {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /*  */
+  .overallDesc {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .prodInfoContainer,
+  .safetyInfoContainer {
+    max-width: 40%;
+  }
+}
