@@ -57,19 +57,11 @@ span {
 nav {
   height: 80px;
   background-color: var(--houseColor);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   display: flex;
   width: 100%;
   align-items: center;
@@ -88,6 +80,7 @@ nav ul li a {
 
 .navlinks,
 #electric {
+  position: fixed;
   display: none;
 }
 
@@ -165,6 +158,10 @@ main .heroContainer img {
 .blackDiamond,
 .whiteDiamond {
   cursor: pointer;
+}
+
+.features a {
+  text-decoration: none;
 }
 
 /* Technical Specification Styling */
