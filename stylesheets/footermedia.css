@@ -1,0 +1,48 @@
+@media screen and (max-width: 767px) {
+    .navBotItem {
+        flex-basis: 25%;
+    }
+    
+    .navBotItem.coc {
+        flex-basis: 50%;
+    }
+    .navBotItem.legal {
+        flex-basis: 50%;
+    }
+    .navBotItem.about {
+        justify-content: flex-start;
+    }
+    
+    .navBotItem.career {
+        justify-content: flex-start;
+    }
+    
+    .navBotItem.media {
+        justify-content: flex-end;
+    }
+    .navBotItem.contact {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .socialMedia {
+        justify-content: center;
+        font-size: 27px;
+    }
+    .fa {
+        margin: 0px 20px;
+    }
+    .navBottom {
+        margin: 43px 0px;
+    }
+    .navBotItem {
+        margin: 0px 28px;
+    }
+    .copyright {
+        font-size: 18px;
+    }
+    .navBotItem {
+        font-size: 18px;
+    }
+}
