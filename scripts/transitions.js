@@ -45,6 +45,8 @@ barba.init({
 
         async enter(data){
             scrollToTop();
+            animateHeader();
+            // animateHistory();
         },
 
         async once(data){

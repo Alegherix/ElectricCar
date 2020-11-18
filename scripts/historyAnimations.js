@@ -8,4 +8,4 @@ function animateHistory(){
     })
 }
 
-animateHistory();
+// animateHistory();

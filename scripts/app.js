@@ -17,9 +17,10 @@ const validateForm = (event) => {
 // Changes what type of car img is showing
 function changeImage(img) {
     const carImg = document.querySelector(".electricColoringImg");
-    const colorRegex = new RegExp("(red)|(yellow)|(green)")
+    const colorRegex = new RegExp("(red)|(blue)|(black)")
+    // console.log(img.src);
     const buttonColor = img.src.match(colorRegex)[0];
-    // console.log(carImg.classList.toggle("active"));
+
 
     const tl = gsap.timeline();
     tl.to(".electricColoringImg", {
