@@ -1,31 +1,17 @@
-    body{
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        color:#FFF;
-    }
+@media screen and (min-width:800px){
     section.featureCard{
-        width: 100%;
-        max-width: 450px;
+        max-width: 1065px;
         margin-bottom: 125px;
-        margin-left: 40px;
-        font-size: 18px;
+        font-size: 24px;
     }
     section.featureCard>figure{
-        margin: 0px;
-        margin-bottom: 0px;
-        position: relative;
-        box-sizing: border-box;
-        width: 450px;
-    }
-    section.featureCard>figure>span{
-        position:absolute
+        width: 1065px;
     }
     section.featureCard>figure img{
-        max-width:450px;
+        max-width:1065px;
     }
     .fetureBtn{
-        height: 59px;
+        height: 85px;
         width: 303px;
         display: flex;
         flex-direction: column;
@@ -40,11 +26,11 @@
     }
     .featureCard img.tire{
         z-index: 4;
-        left: 20px;
-        width: 59px;
+        width: 85px;
         top: 0;
-        left: 0;
+        left: -150px;
     }
+    
     .featureCard span.btnTxt {
         display: flex;
         position: absolute;
@@ -52,27 +38,30 @@
         z-index: 3;
         color: #fff;
         top: 8px;
-        left: 120px;
-        max-width: 120px;
+        padding-left: 5px;
+        left: 30px;
+        max-width: 180px;
         justify-content: center;
         text-align: center;
-        height: 44px;
+        height: 72px;
         align-items: center;
+        /* font-size: 24px; */
+        /* background-color: rgba(22, 200, 200, 0.7); */
     }
     .featureCard img.fetureArrowsHover {
         top: 1px;
         z-index: 2;
-        height: 59px;
-        width: 284px;
-        left: 27px;
-        clip-path: inset(0px 284px 0px 0px);
+        width: 413px;
+        height: 87px;
+        left: -104px;
+        clip-path: inset(0px 0px 0px 0px);
     }
     .featureCard img.drk {
         top: 5px;
-        width: 275px;
-        height: 50px;
         z-index: 0;
-        left: 30px;
+        left: -100px;
+        height: 75px;
+        width: 400px;
         box-shadow: 0px 4px 12px 0px black;
     }
     .fetureBtn:hover{
@@ -100,16 +89,16 @@
     @keyframes tire{
         0% {
             transform: rotate3d(0, 0, 0);
-            left:20px;
+            left: 0px;
         }
         100%{
             transform: rotate3d(0, 0, 360, 5turn);
-            left:250px;
+            left:370px;
         }
     }
     @keyframes arrows{
         0% {
-            clip-path: inset(0px 274px 0px 0px);
+            clip-path: inset(0px 413px 0px 0px);
             
         }
         
@@ -126,3 +115,4 @@
             box-shadow: 0px 0px 5px #FFFFFF;
         }
     }   
+}
