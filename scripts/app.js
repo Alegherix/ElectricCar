@@ -70,7 +70,6 @@ function changeImage(img) {
 
 const main = () => {
   addBurgerListener();
-  feather.replace();
 };
 
 main();
