@@ -108,6 +108,11 @@ main .heroContainer h1 {
   font-weight: 400;
 }
 
+main .heroContainer picture {
+  position: absolute;
+  width: 100%;
+}
+
 main .heroContainer img {
   position: absolute;
   width: 100%;

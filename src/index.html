@@ -58,11 +58,18 @@
     <main data-barba="container" data-barba-namespace="home">
       <section>
         <div class="heroContainer">
-          <img
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="/assets/header_bigv1.png"
+            />
+            <img src="/assets/redTerra.png" alt="img" />
+          </picture>
+          <!-- <img
             class="heroImg"
             src="../assets/redTerra.png"
             alt="Picture of Electric"
-          />
+          /> -->
           <p class="heroText"><span>You are special</span></p>
           <h1 class="heroHeading">Electric</h1>
         </div>
