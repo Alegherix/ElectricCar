@@ -80,25 +80,25 @@ section.featureCard>figcaption>img{
     cursor: pointer;
 }
 .fetureBtn:hover img.tire{
-    animation-name:tire;
+    animation-name:tire-phone;
     animation-duration:2s;
     animation-fill-mode: forwards;
 }
 .fetureBtn:hover img.fetureArrowsHover{
-    animation-name:arrows;
+    animation-name:arrows-phone;
     animation-duration:2s;
     animation-fill-mode: forwards;
     /* box-shadow: 0px 4px 12px 0px black; */
 }
 .fetureBtn:hover img.drk{
-    animation-name:card;
+    animation-name:card-phone;
     animation-duration:2s;
     animation-fill-mode: forwards;
 }
 body{
     background: linear-gradient(270deg, #162133 0%, rgba(32, 47, 72, 0.9) 44.27%, rgba(32, 47, 72, 0.9) 55.73%, #162133 100%);
 }
-@keyframes tire{
+@keyframes tire-phone{
     0% {
         transform: rotate3d(0, 0, 0);
         left:20px;
@@ -108,7 +108,7 @@ body{
         left:250px;
     }
 }
-@keyframes arrows{
+@keyframes arrows-phone{
     0% {
         clip-path: inset(0px 274px 0px 0px);
         
@@ -119,7 +119,7 @@ body{
         
     }
 }
-@keyframes card{
+@keyframes card-phone{
     0% {
         box-shadow: 0px 0px 0px #FFFFFF;
     }
@@ -130,15 +130,15 @@ body{
 
 @media screen and (min-width:800px){
     section.featureCard{
-        max-width: 1065px;
+        max-width: 750px;
         margin-bottom: 180px;
         font-size: 24px;
     }
     section.featureCard>figure{
-        width: 1065px;
+        width: 750px;
     }
     section.featureCard>figure img{
-        max-width:1065px;
+        max-width:750px;
     }
     .fetureBtn{
         height: 85px;
@@ -167,15 +167,15 @@ body{
         width: 400px;
     }
     .fetureBtn:hover img.tire{
-        animation-name:tire-desktop;
+        animation-name:tire;
     }
     .fetureBtn:hover img.fetureArrowsHover{
-        animation-name:arrows-desktop;
+        animation-name:arrows;
     }
     .fetureBtn:hover img.drk{
-        animation-name:card-desktop;
+        animation-name:card;
     }
-    @keyframes tire-desktop{
+    @keyframes tire{
         0% {
             transform: rotate3d(0, 0, 0);
             left: 0px;
@@ -185,7 +185,7 @@ body{
             left:365px;
         }
     }
-    @keyframes arrows-desktop{
+    @keyframes arrows{
         0% {
             clip-path: inset(0px 413px 0px 0px);
             
@@ -196,7 +196,7 @@ body{
             
         }
     }
-    @keyframes card-desktop{
+    @keyframes card{
         0% {
             box-shadow: 0px 0px 0px #FFFFFF;
         }
@@ -204,4 +204,17 @@ body{
             box-shadow: 0px 0px 5px #FFFFFF;
         }
     }   
+}
+
+@media screen and (min-width:1030px){
+    section.featureCard{
+        max-width: 1065px;
+    }
+    section.featureCard>figure{
+        width: 1065px;
+    }
+    section.featureCard>figure img{
+        max-width:1065px;
+    }
+    
 }
