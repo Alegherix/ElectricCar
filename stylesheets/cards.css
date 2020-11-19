@@ -82,7 +82,6 @@ section.featureCard > figcaption > img {
   animation-name: arrows-phone;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  display: none;
   /* box-shadow: 0px 4px 12px 0px black; */
 }
 
