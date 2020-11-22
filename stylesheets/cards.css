@@ -147,11 +147,12 @@ section.featureCard > figcaption > img {
     height: 72px;
   }
   .featureCard img.fetureArrowsHover {
-    width: 413px;
-    height: 87px;
-    left: 41px;
-    clip-path: inset(0px 413px 0px 0px);
-  }
+    width: 435px;
+    height: 108px;
+    left: 33px;
+    top: -5px;
+    clip-path: inset(0px 435px 0px 0px);
+}
   .featureCard img.drk {
     left: 45px;
     height: 75px;
