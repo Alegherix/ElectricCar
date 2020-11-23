@@ -237,6 +237,10 @@ main .heroContainer img {
   margin-bottom: 2.6rem;
 }
 
+.coloringContainer {
+  margin-bottom: 10rem;
+}
+
 .redDiamond,
 .blackDiamond,
 .whiteDiamond {

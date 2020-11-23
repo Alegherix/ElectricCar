@@ -79,6 +79,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .features {
+    row-gap: 8rem;
+  }
+
   .signup {
     margin-top: 100px;
   }
@@ -109,5 +113,19 @@
   }
   .cupholderContainer img {
     max-width: 374px;
+  }
+
+  .interior {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .accessories {
+    /* display: flex; */
+    /* justify-content: center; */
+  }
+  .featureCard {
+    max-width: 1065px;
+    margin: 0 auto;
   }
 }
