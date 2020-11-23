@@ -79,6 +79,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .coloringContainer {
+    margin-bottom: 15rem;
+  }
+  .features {
+    row-gap: 3rem;
+  }
   .signup {
     margin-top: 100px;
   }

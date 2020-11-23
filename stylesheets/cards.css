@@ -201,14 +201,26 @@ section.featureCard > figcaption > img {
 @media screen and (min-width: 1024px) {
   section.featureCard {
     max-width: 1065px;
-    margin-top: 86px;
+    /* margin-top: 86px; */
   }
-  section.featureCard:nth-child(odd) {
-    margin-right: 100px;
+}
+
+@media screen and (min-width: 1065px) {
+  .featureCard {
+    margin-right: 4rem;
     margin-left: auto;
   }
-  section.feautreCard:nth-child(even) {
-    margin-left: 100px;
+
+  .interior {
+    margin: 0 auto;
+  }
+
+  .accessories {
+    margin-left: 4rem;
     margin-right: auto;
+  }
+
+  .history {
+    margin: 0 auto;
   }
 }
