@@ -38,9 +38,7 @@
     margin-bottom: 0px;
   }
   .signupInfoContainer {
-    margin: 0 auto;
-    max-width: 768px;
-    margin-top: 0px;
+    max-width: 600px;
   }
 
   .features {
@@ -85,10 +83,7 @@
     margin-top: 100px;
   }
   .signupInfoContainer {
-    margin: 0 auto;
-    /*New Code*/
     margin-top: 95px;
-    max-width: 450px;
     margin-bottom: 76px;
   }
   .overallDesc {
