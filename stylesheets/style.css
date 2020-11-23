@@ -57,34 +57,77 @@ span {
 
 /* Navigation Styling */
 
+#electric {
+  display: none;
+}
+
+.logo {
+  margin: 1.5rem;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
 nav {
-  height: 80px;
   background-color: var(--houseColor);
+  min-height: 80px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navlinks {
+  width: 100%;
+}
+
+nav.active {
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+nav ul.active {
+  height: 100vh;
+  margin-top: 6rem;
+}
+
+.navlinks.active {
+  display: flex;
 }
 
 nav ul {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  align-items: center;
-  justify-content: space-between;
+}
+
+nav ul li {
   list-style: none;
-  padding: 0 1.8rem;
+  text-align: center;
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
-  font-size: 1.15rem;
-  font-weight: 700;
-  padding: 0.5rem;
+  padding: 1rem;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #263856;
 }
 
 .navlinks,
 #electric {
-  position: fixed;
   display: none;
+}
+
+.burgerContainer {
+  position: absolute;
+  right: 1rem;
+  top: 0.75rem;
 }
 
 /* Hero Styling */
@@ -188,7 +231,7 @@ main .heroContainer img {
 .signup {
   margin-top: 2rem;
   /*New Code*/
-  margin-top:100px;
+  margin-top: 100px;
   margin-bottom: 61px;
 }
 
@@ -200,10 +243,10 @@ main .heroContainer img {
 
 .signupInfoContainer {
   /*padding: 1.5rem; */
-  max-width:360px;
-  margin-top:16px;
+  max-width: 360px;
+  margin-top: 16px;
   margin-left: auto;
-  margin-right:auto;
+  margin-right: auto;
 }
 
 .signupInfoContainer p {
@@ -260,7 +303,7 @@ main .heroContainer img {
   cursor: pointer;
   /*New code*/
   margin-bottom: 0px;
-  margin-top:35px;
+  margin-top: 35px;
 }
 
 /* Creates container to center text inside image */
@@ -310,7 +353,7 @@ form input[type='submit'] {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   /*New Code*/
-  margin:26px auto;
+  margin: 26px auto;
 }
 .shareContainer p {
   margin-right: 1.5rem;

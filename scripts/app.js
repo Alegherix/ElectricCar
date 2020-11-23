@@ -1,29 +1,13 @@
 const addBurgerListener = () => {
   const burgerButton = document.querySelector('.hamburger');
+  const navlinks = document.querySelector('.navlinks');
+  const nav = document.querySelector('nav');
+  const ul = document.querySelector('nav ul');
   burgerButton.addEventListener('click', () => {
     burgerButton.classList.toggle('is-active');
-    const navigation = document.querySelector('.navlinks');
-    const ulElement = navigation.querySelector('ul');
-    const header = document.querySelector('header');
-
-    if (burgerButton.classList.contains('is-active')) {
-      navigation.style.display = 'flex';
-      navigation.style.backgroundColor = 'var(--houseColor)';
-      navigation.style.position = 'fixed';
-      navigation.style.top = 0;
-      navigation.style.left = 0;
-      navigation.style.height = '100vh';
-      navigation.style.width = '100vw';
-      ulElement.style.flexDirection = 'column';
-      ulElement.style.justifyContent = 'center';
-      ulElement.style.gap = '1rem';
-
-      header.style.width = '100%';
-      header.style.position = 'fixed';
-      header.style.zIndex = 5;
-    } else {
-      navigation.style.display = 'none';
-    }
+    navlinks.classList.toggle('active');
+    nav.classList.toggle('active');
+    ul.classList.toggle('active');
   });
 };
 

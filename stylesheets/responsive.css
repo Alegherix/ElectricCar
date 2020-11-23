@@ -1,12 +1,46 @@
 @media screen and (min-width: 768px) {
-  .signup{
-    margin-top:100px;
+  /* Navigation styling */
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  nav ul {
+    flex-direction: row;
+    width: auto;
+    margin-right: 0.5rem;
+  }
+
+  .navlinks {
+    width: auto;
+  }
+
+  .burgerContainer {
+    display: none;
+  }
+
+  .navlinks,
+  #electric {
+    display: flex;
+  }
+
+  #electric {
+    font-size: 20px;
+    font-family: 'dosis';
+  }
+
+  /* Signup Styling */
+  .signup {
+    margin-top: 100px;
     margin-bottom: 0px;
   }
   .signupInfoContainer {
     margin: 0 auto;
     max-width: 768px;
-    margin-top:0px;
+    margin-top: 0px;
   }
 
   .features {
@@ -29,7 +63,7 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
-  /*new code*/
+    /*new code*/
     max-width: 764px;
     margin-left: auto;
     max-width: 900px;
@@ -41,16 +75,16 @@
     max-width: 374px;
   }
   /*new code*/
-  .shareContainer{
-    margin:76px auto;
+  .shareContainer {
+    margin: 76px auto;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .signup{
-    margin-top:100px;
+  .signup {
+    margin-top: 100px;
   }
-  .signupInfoContainer{
+  .signupInfoContainer {
     margin: 0 auto;
     /*New Code*/
     margin-top: 95px;
@@ -72,13 +106,13 @@
     align-self: center;
   }
   .cupholderContainer {
-  /*new code*/
+    /*new code*/
     max-width: 764px;
     margin-left: auto;
     max-width: 900px;
     margin-right: auto;
   }
-  .cupholderContainer img{
+  .cupholderContainer img {
     max-width: 374px;
   }
 }
