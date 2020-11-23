@@ -1,6 +1,12 @@
 @media screen and (min-width: 768px) {
+  .signup{
+    margin-top:100px;
+    margin-bottom: 0px;
+  }
   .signupInfoContainer {
     margin: 0 auto;
+    max-width: 768px;
+    margin-top:0px;
   }
 
   .features {
@@ -23,14 +29,34 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
+  /*new code*/
+    max-width: 764px;
+    margin-left: auto;
+    max-width: 900px;
+    margin-right: auto;
   }
 
   .cupholderContainer img {
     width: 40%;
+    max-width: 374px;
+  }
+  /*new code*/
+  .shareContainer{
+    margin:76px auto;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .signup{
+    margin-top:100px;
+  }
+  .signupInfoContainer{
+    margin: 0 auto;
+    /*New Code*/
+    margin-top: 95px;
+    max-width: 450px;
+    margin-bottom: 76px;
+  }
   .overallDesc {
     display: flex;
     height: 100%;
@@ -44,5 +70,15 @@
 
   .coloringContainer {
     align-self: center;
+  }
+  .cupholderContainer {
+  /*new code*/
+    max-width: 764px;
+    margin-left: auto;
+    max-width: 900px;
+    margin-right: auto;
+  }
+  .cupholderContainer img{
+    max-width: 374px;
   }
 }

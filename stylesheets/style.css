@@ -187,6 +187,9 @@ main .heroContainer img {
 
 .signup {
   margin-top: 2rem;
+  /*New Code*/
+  margin-top:100px;
+  margin-bottom: 61px;
 }
 
 .signup img {
@@ -196,8 +199,11 @@ main .heroContainer img {
 /* Måste fixa, font size matchar ej med styling i Figma */
 
 .signupInfoContainer {
-  padding: 1.5rem;
-  max-width: 768px;
+  /*padding: 1.5rem; */
+  max-width:360px;
+  margin-top:16px;
+  margin-left: auto;
+  margin-right:auto;
 }
 
 .signupInfoContainer p {
@@ -205,6 +211,8 @@ main .heroContainer img {
   font-size: 1.35rem;
   margin-bottom: 1.9rem;
   line-height: 120%;
+  /*New code*/
+  text-align: center;
 }
 
 .signupInfoContainer form {
@@ -231,6 +239,8 @@ main .heroContainer img {
 
 .signupInfoContainer span {
   margin-left: 0.4rem;
+  /*New code*/
+  font-weight: 600;
 }
 
 /* Change styling of animating input field  */
@@ -238,6 +248,8 @@ main .heroContainer img {
 .has-float-label select:placeholder-shown:not(:focus) + *,
 .has-float-label textarea:placeholder-shown:not(:focus) + * {
   color: #00000066;
+  /*New Code*/
+  color: #000000;
   font-size: 1.2rem;
 }
 
@@ -246,6 +258,9 @@ main .heroContainer img {
   width: 188px;
   margin: 1.5rem auto;
   cursor: pointer;
+  /*New code*/
+  margin-bottom: 0px;
+  margin-top:35px;
 }
 
 /* Creates container to center text inside image */
@@ -294,6 +309,8 @@ form input[type='submit'] {
   align-items: center;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
+  /*New Code*/
+  margin:26px auto;
 }
 .shareContainer p {
   margin-right: 1.5rem;
