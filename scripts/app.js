@@ -11,8 +11,6 @@ const addBurgerListener = () => {
   });
 };
 
-function enableBurger() {}
-
 function closeBurger() {
   const burgerButton = document.querySelector('.hamburger');
   const navigation = document.querySelector('.navlinks');
@@ -57,3 +55,8 @@ const main = () => {
 };
 
 main();
+
+// const testcreateBG = () => {
+//   const container = document.querySelector(".featureCard figure");
+
+// }

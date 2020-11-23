@@ -76,6 +76,25 @@
   .shareContainer {
     margin: 76px auto;
   }
+
+  .techFStripe {
+    height: 80px;
+    width: 40%;
+    right: -2rem;
+    background-color: rgba(255, 0, 0, 0.6);
+    position: absolute;
+    z-index: -1;
+    top: 7rem;
+  }
+  .techSStripe {
+    height: 160px;
+    width: 80%;
+    right: -2rem;
+    background-color: rgba(42, 77, 134, 0.3);
+    position: absolute;
+    z-index: -1;
+    top: 14rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -115,5 +134,16 @@
   }
   .cupholderContainer img {
     max-width: 374px;
+  }
+
+  .stripe {
+    top: 5rem;
+    left: -25rem;
+    height: 250px;
+    width: 100%;
+    /* border-radius: px; */
+    z-index: -1;
+    background-color: var(--houseColor);
+    position: absolute;
   }
 }
