@@ -15,6 +15,10 @@
   /* overflow: hidden; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: var(--primaryGradient);
   color: white;
@@ -139,9 +143,18 @@ main .heroContainer {
   height: calc(100vh - 80px);
 }
 
-main .heroContainer p,
-main .heroContainer h1 {
+.heroTextContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .heroContainer p {
   padding: 1rem;
+}
+
+main .heroContainer h1 {
+  padding: 0.4rem;
+  margin-right: 0.3rem;
 }
 
 main .heroContainer p {
@@ -150,7 +163,6 @@ main .heroContainer p {
 
 main .heroContainer h1 {
   font-size: 2rem;
-  align-self: flex-end;
   font-weight: 400;
 }
 
@@ -165,6 +177,26 @@ main .heroContainer img {
   height: calc(100vh - 80px);
   /* Vill att texten ska visas ovanpå bilden */
   z-index: -1;
+}
+
+.heroSignupContainer {
+  position: relative;
+  margin: 0 auto;
+}
+
+.heroSignupText {
+  /* color: white; */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.heroSignupText a {
+  text-decoration: none;
 }
 
 /* Description Styling */
@@ -290,7 +322,6 @@ main .heroContainer img {
 .has-float-label input:placeholder-shown:not(:focus) + *,
 .has-float-label select:placeholder-shown:not(:focus) + *,
 .has-float-label textarea:placeholder-shown:not(:focus) + * {
-  color: #00000066;
   /*New Code*/
   color: #000000;
   font-size: 1.2rem;
