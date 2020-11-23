@@ -127,10 +127,10 @@ section.featureCard > figcaption > img {
     font-size: 24px;
   }
   section.featureCard > figure {
-    width: 750px;
+    /* width: 750px; */
   }
   section.featureCard > figure img {
-    max-width: 750px;
+    /* max-width: 750px; */
   }
   .fetureBtn {
     height: 85px;
