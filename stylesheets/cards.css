@@ -47,7 +47,7 @@ section.featureCard > figcaption > img {
   padding-left: 5px;
   top: 8px;
   left: 90px;
-  width:100%;
+  width: 100%;
   max-width: 120px;
   justify-content: center;
   text-align: center;
@@ -153,7 +153,7 @@ section.featureCard > figcaption > img {
     left: 33px;
     top: -5px;
     clip-path: inset(0px 435px 0px 0px);
-}
+  }
   .featureCard img.drk {
     left: 45px;
     height: 75px;
@@ -201,21 +201,14 @@ section.featureCard > figcaption > img {
 @media screen and (min-width: 1024px) {
   section.featureCard {
     max-width: 1065px;
-    margin-top:86px;
-  
+    margin-top: 86px;
   }
-  section.featureCard:nth-child(odd){
-    margin-right:100px;
-    margin-left:auto;
+  section.featureCard:nth-child(odd) {
+    margin-right: 100px;
+    margin-left: auto;
   }
-  section.feautreCard:nth-child(even){
+  section.feautreCard:nth-child(even) {
     margin-left: 100px;
     margin-right: auto;
-  }
-  section.featureCard > figure {
-    width: 1065px;
-  }
-  section.featureCard > figure img {
-    max-width: 1065px;
   }
 }
