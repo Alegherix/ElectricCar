@@ -211,16 +211,33 @@ section.featureCard > figcaption > img {
     margin-left: auto;
   }
 
-  .interior {
-    margin: 0 auto;
-  }
-
+  .interior,
   .accessories {
-    margin-left: 4rem;
-    margin-right: auto;
+    margin: 0 auto;
+    position: relative;
   }
 
   .history {
     margin: 0 auto;
+  }
+
+  .merchStripe {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: -1;
+    width: 0%;
+    height: 10px;
+    background-color: #ffffff88;
+  }
+
+  .merchStripeS {
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    z-index: -1;
+    width: 0%;
+    height: 10px;
+    background-color: #ffffff88;
   }
 }

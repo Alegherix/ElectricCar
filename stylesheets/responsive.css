@@ -141,7 +141,6 @@
     left: -25rem;
     height: 250px;
     width: 100%;
-    /* border-radius: px; */
     z-index: -1;
     background-color: var(--houseColor);
     position: absolute;

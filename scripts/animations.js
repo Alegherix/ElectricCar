@@ -61,7 +61,7 @@ const animateColoringTimeline = () => {
 
 const animateExterior = () => {
   //   const tl = gsap.timeLine();
-  const bigScreen = window.outerWidth >= 1440 ? 1.5 : 1;
+  const bigScreen = window.innerWidth >= 1440 ? 1.5 : 1;
   gsap.from('.stripe', {
     scrollTrigger: {
       trigger: '.exteriorBtn',
@@ -123,6 +123,23 @@ const animateHistory = () => {
   });
 };
 
+const animateMerch = () => {
+  gsap.to('.merchStripe', {
+    scrollTrigger: {
+      trigger: '.merchStripeS',
+    },
+    width: '95%',
+    duration: 1,
+  });
+  gsap.to('.merchStripeS', {
+    scrollTrigger: {
+      trigger: '.merchStripeS',
+    },
+    width: '95%',
+    duration: 1,
+  });
+};
+
 animateHeader();
 animateDescText();
 animateColoringTimeline();
@@ -132,3 +149,5 @@ if (window.outerWidth >= 1024) {
 
 animateTech();
 animateHistory();
+
+animateMerch();
