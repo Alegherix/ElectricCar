@@ -61,18 +61,13 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
-    /*new code*/
-    max-width: 764px;
-    margin-left: auto;
-    max-width: 900px;
-    margin-right: auto;
   }
 
   .cupholderContainer img {
     width: 40%;
-    max-width: 374px;
+    max-width: 450px;
   }
-  /*new code*/
+
   .shareContainer {
     margin: 76px auto;
   }
@@ -124,16 +119,6 @@
 
   .coloringContainer {
     align-self: center;
-  }
-  .cupholderContainer {
-    /*new code*/
-    max-width: 764px;
-    margin-left: auto;
-    max-width: 900px;
-    margin-right: auto;
-  }
-  .cupholderContainer img {
-    max-width: 374px;
   }
 
   .stripe {

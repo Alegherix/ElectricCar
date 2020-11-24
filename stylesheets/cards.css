@@ -1,5 +1,5 @@
 section.featureCard {
-  width: 98%;
+  width: 100%;
   /* max-width: 450px; */
   margin-bottom: 40px;
   font-size: 18px;
@@ -123,15 +123,9 @@ section.featureCard > figcaption > img {
 @media screen and (min-width: 800px) {
   section.featureCard {
     max-width: 750px;
-    /* margin-bottom: 180px; */
     font-size: 24px;
   }
-  section.featureCard > figure {
-    /* width: 750px; */
-  }
-  section.featureCard > figure img {
-    /* max-width: 750px; */
-  }
+
   .fetureBtn {
     height: 85px;
     width: 445px;
@@ -228,7 +222,7 @@ section.featureCard > figcaption > img {
     z-index: -1;
     width: 0%;
     height: 10px;
-    background-color: #ffffff88;
+    background-color: #ffffff99;
   }
 
   .merchStripeS {
@@ -238,6 +232,26 @@ section.featureCard > figcaption > img {
     z-index: -1;
     width: 0%;
     height: 10px;
-    background-color: #ffffff88;
+    background-color: #ffffff99;
+  }
+
+  .merchStripeR {
+    position: absolute;
+    bottom: calc(20% + 10px);
+    right: 5%;
+    z-index: -1;
+    width: 10px;
+    height: 0;
+    background-color: #ffffff99;
+  }
+
+  .merchStripeL {
+    position: absolute;
+    top: calc(10% + 10px);
+    left: 0;
+    z-index: -1;
+    width: 10px;
+    height: 0;
+    background-color: #ffffff99;
   }
 }
