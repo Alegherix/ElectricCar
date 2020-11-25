@@ -51,10 +51,10 @@ const animateColoringTimeline = () => {
       start: 'bottom 100%',
     },
     opacity: 0,
-    duration: 0.6,
-    stagger: 0.2,
-    rotation: -360,
-    y: 100,
+    duration: 0.4,
+    stagger: 0.1,
+    // rotation: -360,
+    y: 50,
     ease: Expo.easeOut,
   });
 };
@@ -72,7 +72,6 @@ const animateExterior = () => {
     ease: Expo.easeOut,
   });
 
-  gsap.set('.exteriorDesc', { opacity: 0 });
   gsap.to('.exteriorDesc', {
     scrollTrigger: {
       trigger: '.exteriorBtn',
@@ -85,14 +84,24 @@ const animateExterior = () => {
     delay: 0.3,
     ease: Expo.easeOut,
   });
+
+  gsap.from('.exteriorBtn', {
+    scrollTrigger: {
+      trigger: '.exteriorBtn',
+    },
+    x: -200,
+    opacity: 0,
+    duration: 1,
+    delay: 0.8,
+    ease: Expo.easeOut,
+  });
 };
 
-//Kan göra funktion av de och återanvända
 const animateTech = () => {
   gsap.from('.techFStripe', {
     scrollTrigger: {
       trigger: '.techImg',
-      start: 'top center',
+      start: 'top 60%',
     },
     opacity: 0,
     duration: 2.5,
@@ -102,7 +111,7 @@ const animateTech = () => {
   gsap.from('.techSStripe', {
     scrollTrigger: {
       trigger: '.techImg',
-      start: 'top center',
+      start: 'top 60%',
     },
     opacity: 0,
     duration: 2.5,
@@ -112,13 +121,15 @@ const animateTech = () => {
 };
 
 const animateHistory = () => {
-  gsap.from('.historyImg', {
+  gsap.from('.historyAnim', {
     scrollTrigger: {
-      trigger: '.historyBtn',
+      trigger: '.historyImg',
+      start: 'top 80%',
     },
     opacity: 0,
     duration: 1.5,
-    y: 200,
+
+    x: 100,
     ease: Expo.easeOut,
   });
 };
@@ -138,6 +149,53 @@ const animateMerch = () => {
     width: '95%',
     duration: 1,
   });
+  gsap.to('.merchStripeR', {
+    scrollTrigger: {
+      trigger: '.merchStripeS',
+    },
+    height: 'calc(70% - 20px)',
+    delay: 1,
+    duration: 1,
+  });
+  gsap.to('.merchStripeL', {
+    scrollTrigger: {
+      trigger: '.merchStripeS',
+    },
+    height: 'calc(70% - 20px)',
+    delay: 1,
+    duration: 1,
+  });
+  gsap.from('.merchImg', {
+    scrollTrigger: {
+      trigger: '.merchStripeS',
+    },
+    opacity: 0,
+    delay: 1.8,
+    duration: 1,
+  });
+  gsap.from('.merchBtn', {
+    scrollTrigger: {
+      trigger: '.merchStripeS',
+    },
+    x: 100,
+    opacity: 0,
+    delay: 2.5,
+    duration: 0.7,
+  });
+};
+
+const animateInterior = () => {
+  gsap.from('.interiorAnim', {
+    scrollTrigger: {
+      trigger: '.interiorImg',
+      start: 'top 90%',
+    },
+    opacity: 0,
+    duration: 1.5,
+    y: 200,
+    stagger: 0.8,
+    ease: Expo.easeOut,
+  });
 };
 
 animateHeader();
@@ -151,3 +209,4 @@ animateTech();
 animateHistory();
 
 animateMerch();
+animateInterior();
