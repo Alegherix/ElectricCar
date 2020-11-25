@@ -9,38 +9,36 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../stylesheets/hamburger.css" />
-    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/hamburger.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/responsive.css">
 
     <title>Electric</title>
   </head>
   <body data-barba="wrapper">
     <!-- Används enbart för Page Transitions -->
-
     <header>
       <nav>
-        <ul>
-          <li class="logo" id="logo"><a href="#">Peugeot</a></li>
-          <li id="electric">Electric</li>
-          <li>
-            <div class="navlinks">
+          <div class="logo"><a href="#">Peugeot</a></div>
+          <div class="burgerContainer">
+            <button class="hamburger hamburger--emphatic" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+          <div id="electric"><p>Electric</p></div>
+          <div class="navlinks">
               <ul>
-                <li>Home</li>
-                <li>Exterior</li>
-                <li>Interior</li>
-                <li>Accessories</li>
-                <li>History</li>
+                <li id="homeLnk"><a href="index.html">Home</a></li>
+                <li id="exteriorLnk"><a href="exterior.html">Exterior</a></li>
+                <li id="interiorLnk"><a href="interior.html">Interior</a></li>
+                <li id="marchLnk"><a href="merch.html">Accessories</a></li>
+                <li id="historyLnk"><a href="history.html">History</a></li>
               </ul>
-              <li>
-                <button class="hamburger hamburger--emphatic" type="button">
-                  <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                  </span>
-                </button>
               </li>
             </div>
           </li>
-        </ul>
       </nav>
     </header>
 
