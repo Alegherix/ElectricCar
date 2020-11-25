@@ -28,12 +28,16 @@ function delay(n) {
   0;
 }
 
-function contentAnimation() {}
-
 function closeBurgerIfOpen() {
   const burgerButton = document.querySelector('.hamburger');
+  const navlinks = document.querySelector('.navlinks');
+  const nav = document.querySelector('nav');
+  const ul = document.querySelector('nav ul');
   if (burgerButton.classList.contains('is-active')) {
-    closeBurger();
+    burgerButton.classList.remove('is-active');
+    navlinks.classList.remove('active');
+    nav.classList.remove('active');
+    ul.classList.remove('active');
   }
 }
 
@@ -54,7 +58,6 @@ barba.init({
       async enter(data) {
         scrollToTop();
         animateHeader();
-        // animateHistory();
       },
 
       async once(data) {
