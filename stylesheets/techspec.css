@@ -1,0 +1,241 @@
+.carTech {
+  position: relative;
+  width: 100%;
+}
+.engine {
+  display: none;
+}
+
+.carTech > div + section.hoverText {
+  display: none;
+  background-color: rgba(22, 33, 51, 0.75);
+  height: 25%;
+  width: 15%;
+  color: white;
+  font-family: helvetica, Arial, sans-serif;
+  position: absolute;
+}
+section.mobileTextSpec {
+  display: block;
+}
+section.specififcations h1,
+section.mobileTextSpec h2 {
+  font-weight: 500;
+  text-align: left;
+  margin-top: 20px;
+  padding: 0px 20px 10px 20px;
+}
+section.mobileTextSpec figure {
+  max-width: 414px;
+  display: flex;
+  justify-content: center;
+  background-color: #162133;
+  height: 200px;
+}
+section.mobileTextSpec figure > img {
+  max-width: 30%;
+  object-fit: contain;
+}
+section.mobileTextSpec p {
+  padding: 0px 20px 20px 20px;
+}
+
+.carTech img {
+  width: 100%;
+}
+
+section.generalSpecs {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+}
+section.generalSpecs > figure {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .carTech {
+    position: relative;
+    width: 80%;
+    max-width: 1029px;
+    margin: auto;
+  }
+  .carTech > div + section.hoverText {
+    display: block;
+    background-color: rgba(22, 33, 51, 0.75);
+    height: 0%;
+    padding: 0%;
+    color: white;
+    font-family: helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 0px;
+    overflow-y: hidden;
+    transition: height 700ms ease;
+  }
+  .engine {
+    display: block;
+    border: 3px solid red;
+    height: 14%;
+    width: 10%;
+    position: absolute;
+    top: 5%;
+    left: 10px;
+  }
+  .carTech > div.engine + section.hoverText {
+    top: 19%;
+    width: 30%;
+  }
+  .carTech > div.engine.show + section.hoverText {
+    top: 19%;
+    height: 50%;
+    padding: 2%;
+  }
+  .plane {
+    top: 75%;
+    border: 2px solid blue;
+    position: absolute;
+    height: 14%;
+    width: 10%;
+    left: 8%;
+  }
+  .carTech > div.plane + section.hoverText {
+    top: 89%;
+    width: 35%;
+  }
+  .carTech > div.plane.show + section.hoverText {
+    top: 89%;
+    height: 70%;
+    padding: 2%;
+  }
+  .seatHeat {
+    top: 77%;
+    border: 2px solid green;
+    position: absolute;
+    height: 14%;
+    width: 11%;
+    left: 36%;
+  }
+  .carTech > div.seatHeat + section.hoverText {
+    top: 90%;
+    width: 35%;
+    left: 25%;
+  }
+  .carTech > div.seatHeat.show + section.hoverText {
+    top: 90%;
+    height: 70%;
+    left: 25%;
+    padding: 2%;
+  }
+  .gps {
+    top: 78%;
+    border: 2px solid yellow;
+    position: absolute;
+    height: 14%;
+    width: 11%;
+    left: 77%;
+  }
+  .carTech > div.gps + section.hoverText {
+    top: 92%;
+    width: 35%;
+    left: 67%;
+  }
+  .carTech > div.gps.show + section.hoverText {
+    top: 92%;
+    height: 75%;
+    left: 67%;
+    padding: 2%;
+  }
+  .airBag {
+    top: 17%;
+    border: 2px solid orange;
+    position: absolute;
+    height: 14%;
+    width: 10%;
+    left: 80%;
+  }
+  .carTech > div.airBag + section.hoverText {
+    top: 30%;
+    width: 35%;
+    left: 70%;
+  }
+  .carTech > div.airBag.show + section.hoverText {
+    top: 30%;
+    left: 70%;
+    height: 70%;
+    padding: 2%;
+  }
+
+  section.generalSpecs {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+  }
+  section.specififcations h1 {
+    text-align: center;
+  }
+  section.mobileTextSpec {
+    display: none;
+  }
+
+  section.generalSpecs > ul {
+    height: 200px;
+    display: flex;
+    width: 240px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  section.generalSpecs > ul li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  section.generalSpecs > figure {
+    max-width: 300px;
+    display: block;
+  }
+  section.generalSpecs > figure > img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .engine {
+    height: 16%;
+  }
+  .carTech > div.engine.show + section.hoverText {
+    height: 40%;
+    padding: 2%;
+  }
+
+  .carTech > div.plane.show + section.hoverText {
+    height: 50%;
+    padding: 2%;
+  }
+
+  .carTech > div.seatHeat.show + section.hoverText {
+    height: 50%;
+  }
+
+  .carTech > div.gps.show + section.hoverText {
+    height: 50%;
+  }
+
+  .carTech > div.airBag.show + section.hoverText {
+    height: 45%;
+  }
+
+  section.generalSpecs > ul {
+    height: 200px;
+    display: flex;
+    width: 240px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  section.generalSpecs > ul li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
