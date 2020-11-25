@@ -41,11 +41,11 @@
           <div id="electric"><p>Electric</p></div>
           <div class="navlinks">
               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="exterior.html">Exterior</a></li>
-                <li><a href="interior.html">Interior</a></li>
-                <li><a href="merch.html">Accessories</a></li>
-                <li><a href="history.html">History</a></li>
+                <li id="homeLnk"><a href="index.html">Home</a></li>
+                <li id="exteriorLnk"><a href="exterior.html">Exterior</a></li>
+                <li id="interiorLnk"><a href="interior.html">Interior</a></li>
+                <li id="marchLnk"><a href="merch.html">Accessories</a></li>
+                <li id="historyLnk"><a href="history.html">History</a></li>
               </ul>
               </li>
             </div>
@@ -116,36 +116,40 @@
       </div>
 
       <div class="exterior anim5">
-        <section class="featureCard">
-          <figure>
+        <a href="exterior.html">
+          <section class="featureCard">
+            <figure>
               <div class="stripe"></div>
               <h3 class="anim3 descHeader exteriorDesc">Exterior</h3>
               <img class="featureCardImg exteriorImg" src="../assets/BackRightBil.png">
-          </figure>
-          <figcaption class="fetureBtn exteriorBtn">
+            </figure>
+            <figcaption class="fetureBtn exteriorBtn">
               <img class="tire" src="../assets/img/tire.png">
               <span class="btnTxt">The outside that counts!</span>
               <img class="fetureArrowsHover" src="../assets/img/Arrow_btn_drk.png">
               <img class="drk" src="../assets/img/fetureBg.png">
-          </figcaption>
-      </section>
+            </figcaption>
+          </section>
+        </a>
 
       </div>
       <div class="ctaContainer"></div>
 
       <div class="interior">
-        <section class="featureCard">
-          <figure>
-            <h3 class="anim3 descHeader">Interior</h3>
-            <img src="../assets/seats.png" />
-          </figure>
-          <figcaption class="fetureBtn">
-            <img class="tire" src="../assets/img/tire.png" />
-            <span class="btnTxt">The inside of Electric</span>
-            <img class="fetureArrowsHover" src="../assets/img/Arrow_btn_drk.png" />
-            <img class="drk" src="../assets/img/fetureBg.png" />
-          </figcaption>
-        </section>
+        <a href="interior.html">
+          <section class="featureCard">
+            <figure>
+              <h3 class="anim3 descHeader">Interior</h3>
+              <img src="../assets/seats.png" />
+            </figure>
+            <figcaption class="fetureBtn">
+              <img class="tire" src="../assets/img/tire.png" />
+              <span class="btnTxt">The inside of Electric</span>
+              <img class="fetureArrowsHover" src="../assets/img/Arrow_btn_drk.png" />
+              <img class="drk" src="../assets/img/fetureBg.png" />
+            </figcaption>
+          </section>
+        </a>
       </div>
 
       <div class="accessories">
@@ -276,4 +280,5 @@
   <script src="../scripts/animations.js"></script>
   <script src="../scripts/transitions.js"></script>
   <script src="../scripts/app.js"></script>
+  <script src="../scripts/menueMarker.js"></script>
 </html>

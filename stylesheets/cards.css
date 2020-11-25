@@ -1,5 +1,5 @@
 section.featureCard {
-  width: 98%;
+  width: 100%;
   /* max-width: 450px; */
   margin-bottom: 40px;
   font-size: 18px;
@@ -127,7 +127,11 @@ section.featureCard > figcaption > img {
     font-size: 24px;
   }
   section.featureCard > figure {
+<<<<<<< Updated upstream
     /* width: 750px; */
+=======
+    max-width: 750px;
+>>>>>>> Stashed changes
   }
   section.featureCard > figure img {
     /* max-width: 750px; */
@@ -220,6 +224,7 @@ section.featureCard > figcaption > img {
   .history {
     margin: 0 auto;
   }
+<<<<<<< Updated upstream
 
   .merchStripe {
     position: absolute;
@@ -229,6 +234,10 @@ section.featureCard > figcaption > img {
     width: 0%;
     height: 10px;
     background-color: #ffffff88;
+=======
+  section.featureCard > figure {
+    max-width: 1065px;
+>>>>>>> Stashed changes
   }
 
   .merchStripeS {

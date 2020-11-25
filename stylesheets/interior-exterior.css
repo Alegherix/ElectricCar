@@ -1,0 +1,119 @@
+article.txtImg:nth-child(odd) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+article.txtImg:nth-child(even) {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+}
+article.txtImg section.txt {
+    width: 100%;
+    padding-top:30px;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-bottom: 46px;
+    height: 100%;
+    max-height: 384px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+article.txtImg section.txt:first-child {
+    padding-top: 90px;
+    /* width: 100%; */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+article.txtImg section.txt>h1 {
+    /* position: absolute; */
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+article.txtImg section.txt>h2{
+    font-weight: 500;
+}
+article.txtImg section.txt>p {
+    margin-top: 15px;
+    line-height: 25px;
+    font-size: 16px;
+    max-height: 380px;
+    /* padding-bottom:86px; */
+}
+article.txtImg section.txt>button {
+    display:none;
+}
+article.txtImg>img{
+    width:100%;
+    min-width: 414px;
+    border:none;
+    height:384px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+@media screen and (min-width:768px){
+    article.txtImg section.txt {
+        width: 50%;
+        padding-left: 5%;
+        padding-right:5%;
+        padding-top:0px;
+        padding-bottom:0px;
+        height: 384px;
+        overflow-y: hidden;
+    }
+    article.txtImg section.txt:first-child{
+        padding-top:0px;
+    }
+    article.txtImg section.txt>p{
+        align-items: center;
+    }
+
+    article.txtImg>img{
+        width:50%;
+        min-width: 380px;
+        height: 380px;
+        border: 5px solid #466CA9;
+        object-fit: cover;
+
+    }
+
+}
+@media screen and (min-width:1026px){
+
+    article.txtImg section.txt {
+        height: 406px;
+
+    }
+    article.txtImg section.txt>button {
+        margin-left: auto;
+        margin-right:auto;
+        margin-top:30px;
+        display: block;
+        background-image: url(../assets/signupButton.svg);
+        width: 240px;
+        background-color: unset;
+        border: unset;
+        height: 46px;
+        color: #fff;
+        background-repeat: no-repeat;
+        font-size: 18px;
+        background-size: cover;
+        font-weight: 600;
+        font-family: 'Dosis', arial, sans-serif;
+        transition: background-image 500ms ease;
+    }
+    article.txtImg>img{
+        width:50%;
+        min-width: 380px;
+        height: 406px;
+        border: 5px solid #466CA9;
+        object-fit: cover;
+
+    }
+
+}
