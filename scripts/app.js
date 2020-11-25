@@ -55,8 +55,3 @@ const main = () => {
 };
 
 main();
-
-// const testcreateBG = () => {
-//   const container = document.querySelector(".featureCard figure");
-
-// }
