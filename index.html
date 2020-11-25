@@ -15,42 +15,38 @@
     />
     <link rel="stylesheet" href="./stylesheets/hamburger.css" />
     <link rel="stylesheet" href="./stylesheets/style.css" />
-    <link rel="stylesheet" href="./stylesheets/responsive.css">
-    <link rel="stylesheet" href="./stylesheets/interior-exterior.css">
+    <link rel="stylesheet" href="./stylesheets/responsive.css" />
+    <link rel="stylesheet" href="./stylesheets/interior-exterior.css" />
 
     <title>Electric</title>
   </head>
   <body data-barba="wrapper">
-
     <!-- Används enbart för Page Transitions -->
 
     <div class="loadingContainer">
-      <div class="loadingScreen">
-      </div>
+      <div class="loadingScreen"></div>
     </div>
 
     <header>
       <nav>
-          <div class="logo"><a href="#">Peugeot</a></div>
-          <div class="burgerContainer">
-            <button class="hamburger hamburger--emphatic" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-          </div>
-          <div id="electric"><p>Electric</p></div>
-          <div class="navlinks">
-              <ul>
-                <li id="homeLnk"><a href="index.html">Home</a></li>
-                <li id="exteriorLnk"><a href="exterior.html">Exterior</a></li>
-                <li id="interiorLnk"><a href="interior.html">Interior</a></li>
-                <li id="marchLnk"><a href="merch.html">Accessories</a></li>
-                <li id="historyLnk"><a href="history.html">History</a></li>
-              </ul>
-              </li>
-            </div>
-          </li>
+        <div class="logo"><a href="#">Peugeot</a></div>
+        <div class="burgerContainer">
+          <button class="hamburger hamburger--emphatic" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <div id="electric"><p>Electric</p></div>
+        <div class="navlinks">
+          <ul>
+            <li id="homeLnk"><a href="index.html">Home</a></li>
+            <li id="exteriorLnk"><a href="exterior.html">Exterior</a></li>
+            <li id="interiorLnk"><a href="interior.html">Interior</a></li>
+            <li id="marchLnk"><a href="merch.html">Accessories</a></li>
+            <li id="historyLnk"><a href="history.html">History</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -70,13 +66,28 @@
           </div>
           <div class="heroSignupContainer">
             <a href="#signup">
-            <svg width="195" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="signupBtn" d="M35.5 1.5h-.687l-.448.52-28.5 33-2.142 2.48h157.98l.449-.54 27.5-33 2.051-2.46H35.5z" fill="#2A4D86" fill-opacity="0.7" stroke="#5183D3" stroke-width="3"/></svg>
-            <span class="heroSignupText">Sign up &darr;</span></a>
+              <svg
+                width="195"
+                height="39"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="signupBtn"
+                  d="M35.5 1.5h-.687l-.448.52-28.5 33-2.142 2.48h157.98l.449-.54 27.5-33 2.051-2.46H35.5z"
+                  fill="#2A4D86"
+                  fill-opacity="0.7"
+                  stroke="#5183D3"
+                  stroke-width="3"
+                />
+              </svg>
+              <span class="heroSignupText">Sign up &darr;</span></a
+            >
           </div>
         </div>
       </section>
       <section class="overallDesc">
-        <div class="prodInfoContainer ">
+        <div class="prodInfoContainer">
           <h3 class="anim1 prodDescHeading">Product Description</h3>
           <p class="anim1 prodInfoText">
             Peugeot is bringing car driving to the next level. We are on the go
@@ -95,140 +106,240 @@
         </div>
       </section>
       <div class="features">
-      <div class="coloringContainer">
-        <h3 class="anim3 descHeader">Choose Color</h3>
-        <div class="carColorContainer">
-          <img class="anim3 electricColoringImg" src="./assets/redTerra.webp" alt="Image of the Electric" />
+        <div class="coloringContainer">
+          <h3 class="anim3 descHeader">Choose Color</h3>
+          <div class="carColorContainer">
+            <img
+              class="anim3 electricColoringImg"
+              src="./assets/redTerra.webp"
+              alt="Image of the Electric"
+            />
+          </div>
+
+          <div class="colorPickerContainer">
+            <div class="redDiamond anim4">
+              <img
+                src="./assets/redDiamond.svg"
+                alt=""
+                onClick="changeImage(this);"
+              />
+            </div>
+            <div class="separator"></div>
+            <div class="blackDiamond anim4">
+              <img
+                src="./assets/blueDiamond.svg"
+                onClick="changeImage(this);"
+                alt=""
+              />
+            </div>
+            <div class="separator"></div>
+            <div class="whiteDiamond anim4">
+              <img
+                src="./assets/blackDiamond.svg"
+                onClick="changeImage(this);"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
 
-        <div class="colorPickerContainer">
-          <div class="redDiamond anim4">
-            <img src="./assets/redDiamond.svg" alt="" onClick="changeImage(this);">
-          </div>
-          <div class="separator"></div>
-          <div class="blackDiamond anim4">
-            <img src="./assets/blueDiamond.svg" onClick="changeImage(this);" alt="" />
-          </div>
-          <div class="separator"></div>
-          <div class="whiteDiamond anim4">
-            <img src="./assets/blackDiamond.svg" onClick="changeImage(this);"alt="" />
-          </div>
+        <div class="exterior anim5">
+          <a href="exterior.html">
+            <section class="featureCard">
+              <figure>
+                <div class="stripe"></div>
+                <h3 class="anim3 descHeader exteriorDesc">Exterior</h3>
+                <img
+                  class="featureCardImg exteriorImg"
+                  src="./assets/BackRightBil.webp"
+                  alt="Image of Electric from behind"
+                  srcset="
+                    ./assets/BackRightBil_S.webp   480w,
+                    ./assets/BackRightBil_M.webp   768w,
+                    ./assets/BackRightBil_L.webp  1024w,
+                    ./assets/BackRightBil_XL.webp 1440w
+                  "
+                  sizes="
+                    (max-width: 480px) 480px,
+                    (max-width: 768px) 768px,
+                    (max-width: 1024px) 1024px,
+                    1440px"
+                />
+              </figure>
+              <figcaption class="fetureBtn exteriorBtn">
+                <img class="tire" src="./assets/img/tire.png" />
+                <span class="btnTxt">The outside that counts!</span>
+                <img
+                  class="fetureArrowsHover"
+                  src="./assets/img/Arrow_btn_drk.png"
+                />
+                <img class="drk" src="./assets/img/fetureBg.png" />
+              </figcaption>
+            </section>
+          </a>
+        </div>
+
+        <div class="interior">
+          <a href="interior.html">
+            <section class="featureCard">
+              <figure>
+                <h3 class="descHeader">Interior</h3>
+                <img
+                  class="interiorAnim interiorImg"
+                  src="./assets/seats.webp"
+                  alt="Image of the seats of Electric"
+                  srcset="
+                    ./assets/seats_S.webp   480w,
+                    ./assets/seats_M.webp   768w,
+                    ./assets/seats_L.webp  1024w,
+                    ./assets/seats_XL.webp 1440w
+                  "
+                  sizes="
+                    (max-width: 480px) 480px,
+                    (max-width: 768px) 768px,
+                    (max-width: 1024px) 1024px,
+                    1440px"
+                />
+              </figure>
+              <figcaption class="fetureBtn interiorAnim">
+                <img class="tire" src="./assets/img/tire.png" />
+                <span class="btnTxt">The inside of Electric</span>
+                <img
+                  class="fetureArrowsHover"
+                  src="./assets/img/Arrow_btn_drk.png"
+                />
+                <img class="drk" src="./assets/img/fetureBg.png" />
+              </figcaption>
+            </section>
+          </a>
+        </div>
+
+        <div class="accessories">
+          <a href="merch.html">
+            <div class="merchStripe"></div>
+            <div class="merchStripeS"></div>
+            <div class="merchStripeR"></div>
+            <div class="merchStripeL"></div>
+            <section class="featureCard">
+              <figure>
+                <h3 class="anim3 descHeader">Accessories</h3>
+                <img
+                  class="merchImg"
+                  src="./assets/kaffekopp_röd_post.webp"
+                  alt="Image of the Cup holder for Electric"
+                  srcset="
+                    ./assets/kaffekopp_röd_post_S.webp   480w,
+                    ./assets/kaffekopp_röd_post_M.webp   768w,
+                    ./assets/kaffekopp_röd_post_L.webp  1024w,
+                    ./assets/kaffekopp_röd_post_XL.webp 1440w
+                  "
+                  sizes="
+                  (max-width: 480px) 480px,
+                  (max-width: 768px) 768px,
+                  (max-width: 1024px) 1024px,
+                  1440px"
+                />
+              </figure>
+              <figcaption class="fetureBtn merchBtn">
+                <img class="tire" src="./assets/img/tire.png" />
+                <span class="btnTxt">Shop</span>
+                <img
+                  class="fetureArrowsHover"
+                  src="./assets/img/Arrow_btn_drk.png"
+                />
+                <img class="drk" src="./assets/img/fetureBg.png" />
+              </figcaption>
+            </section>
+          </a>
+        </div>
+
+        <div class="techSpec">
+          <a href="techspec.html">
+            <section class="featureCard">
+              <figure>
+                <div class="techFStripe"></div>
+                <div class="techSStripe"></div>
+                <h3 class="anim3 descHeader techHeader">Specification</h3>
+                <img
+                  class="techImg"
+                  src="./assets/Engine.webp"
+                  alt="Image of the inner workings of Electric"
+                  srcset="
+                    ./assets/Engine_S.webp   480w,
+                    ./assets/Engine_M.webp   768w,
+                    ./assets/Engine_L.webp  1024w,
+                    ./assets/Engine_XL.webp 1440w
+                  "
+                  sizes="
+                (max-width: 480px) 480px,
+                (max-width: 768px) 768px,
+                (max-width: 1024px) 1024px,
+                1440px"
+                />
+              </figure>
+              <figcaption class="fetureBtn">
+                <img class="tire" src="./assets/img/tire.png" />
+                <span class="btnTxt techBtn">Inner workings of Electric</span>
+                <img
+                  class="fetureArrowsHover"
+                  src="./assets/img/Arrow_btn_drk.png"
+                />
+                <img class="drk" src="./assets/img/fetureBg.png" />
+              </figcaption>
+            </section>
+          </a>
+        </div>
+
+        <div class="history historyAnim">
+          <a href="history.html">
+            <section class="featureCard">
+              <figure>
+                <h3 class="anim3 descHeader">History</h3>
+                <img
+                  class="historyAnim historyImg"
+                  src="./assets/BackHighBil.webp"
+                  alt="The back of Electric"
+                  srcset="
+                    ./assets/BackHighBil_S.webp   480w,
+                    ./assets/BackHighBil_M.webp   768w,
+                    ./assets/BackHighBil_L.webp  1024w,
+                    ./assets/BackHighBil_XL.webp 1440w
+                  "
+                  sizes="
+                (max-width: 480px) 480px,
+                (max-width: 768px) 768px,
+                (max-width: 1024px) 1024px,
+                1440px"
+                />
+              </figure>
+              <figcaption class="fetureBtn historyAnim">
+                <img class="tire" src="./assets/img/tire.png" />
+                <span class="btnTxt historyBtn">Journey to the past</span>
+                <img
+                  class="fetureArrowsHover"
+                  src="./assets/img/Arrow_btn_drk.png"
+                />
+                <img class="drk" src="./assets/img/fetureBg.png" />
+              </figcaption>
+            </section>
+          </a>
         </div>
       </div>
-
-      <div class="exterior anim5">
-        <a href="exterior.html">
-        <section class="featureCard">
-          <figure>
-              <div class="stripe"></div>
-              <h3 class="anim3 descHeader exteriorDesc">Exterior</h3>
-              <img class="featureCardImg exteriorImg" src="./assets/BackRightBil.webp">
-          </figure>
-          <figcaption class="fetureBtn exteriorBtn">
-              <img class="tire" src="./assets/img/tire.png">
-              <span class="btnTxt">The outside that counts!</span>
-              <img class="fetureArrowsHover" src="./assets/img/Arrow_btn_drk.png">
-              <img class="drk" src="./assets/img/fetureBg.png">
-          </figcaption>
-      </section>
-        </a>
-      </div>
-      <div class="ctaContainer"></div>
-
-      <a href="interior.html">
-      <div class="interior">
-        <section class="featureCard">
-          <figure>
-            <h3 class="descHeader">Interior</h3>
-            <img class="interiorAnim interiorImg" src="./assets/seats.webp" />
-          </figure>
-          <figcaption class="fetureBtn interiorAnim">
-            <img class="tire" src="./assets/img/tire.png" />
-            <span class="btnTxt">The inside of Electric</span>
-            <img class="fetureArrowsHover" src="./assets/img/Arrow_btn_drk.png" />
-            <img class="drk" src="./assets/img/fetureBg.png" />
-          </figcaption>
-        </section>
-      </a>
-      </div>
-
-      <div class="accessories">
-        <a href="merch.html">
-        <div class="merchStripe"></div>
-        <div class="merchStripeS"></div>
-        <div class="merchStripeR"></div>
-        <div class="merchStripeL"></div>
-        <section class="featureCard">
-          
-          <figure>
-            <h3 class="anim3 descHeader">Accessories</h3>
-            <img class="merchImg" src="./assets/kaffekopp_röd_post.webp" />
-            
-          </figure>
-          <figcaption class="fetureBtn merchBtn">
-            <img class="tire" src="./assets/img/tire.png" />
-            <span class="btnTxt ">Shop</span>
-            <img class="fetureArrowsHover" src="./assets/img/Arrow_btn_drk.png" />
-            <img class="drk" src="./assets/img/fetureBg.png" />
-          </figcaption>
-        </section>
-      </a>
-      </div>
-
-      <div class="techSpec">
-        <a href="techspec.html">
-        <section class="featureCard">
-          <figure>
-            <div class="techFStripe"></div>
-            <div class="techSStripe"></div>
-            <h3 class="anim3 descHeader techHeader">Specification</h3>
-            <img class="techImg" src="./assets/Engine.webp" />
-          </figure>
-          <figcaption class="fetureBtn">
-            <img class="tire" src="./assets/img/tire.png" />
-            <span class="btnTxt techBtn">Inner workings of Electric</span>
-            <img class="fetureArrowsHover" src="./assets/img/Arrow_btn_drk.png" />
-            <img class="drk" src="./assets/img/fetureBg.png" />
-          </figcaption>
-        </section>
-      </a>
-      </div>    
-      
-     
-      <div class="history historyAnim">
-        <a href="history.html">
-        <section class="featureCard">
-          <figure>
-            <h3 class="anim3 descHeader">History</h3>
-            <img class="historyAnim historyImg" src="./assets/BackHighBil.webp" />
-          </figure>
-          <figcaption class="fetureBtn historyAnim">
-            <img class="tire" src="./assets/img/tire.png" />
-            <span class="btnTxt historyBtn">Journey to the past</span>
-            <img class="fetureArrowsHover" src="./assets/img/Arrow_btn_drk.png" />
-            <img class="drk" src="./assets/img/fetureBg.png" />
-          </figcaption>
-        </section>
-        </a>
-      </div>    
-
-    </div>
-
 
       <div id="signup" class="signup">
         <div class="cupholderContainer">
-        <img
-          src="./assets/cupholder_fram_post.webp"
-          alt="Image of a Cupholder for Electric"
-          loading="lazy"
-        />  
-        <img
-        class="cupSide"
-          src="./assets/cupholder_sida_post.webp"
-          alt="Image of a Cupholder for Electric"
-          loading="lazy"
-        />
-      </div>
+          <img
+            src="./assets/cupholder_fram_post_M.webp"
+            alt="Image of a Cupholder for Electric"
+            loading="lazy"
+          />
+          <img
+            class="cupSide"
+            src="./assets/cupholder_sida_post_S.webp"
+            alt="Image of a Cupholder for Electric"
+            loading="lazy"
+          />
+        </div>
         <div class="signupInfoContainer">
           <p>
             Sing up today and get a free cup holder when you preorder your own
@@ -238,16 +349,30 @@
             <label class="has-float-label" for="email">
               <input type="email" placeholder=" " />
               <span>Enter you email adress</span>
-              </input>
+              <!-- </input> -->
             </label>
             <label class="signupLabel">
-              <input type="submit">
+              <input type="submit" />
               <div class="signupContainer">
-                <svg width="195" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="signupBtn" d="M35.5 1.5h-.687l-.448.52-28.5 33-2.142 2.48h157.98l.449-.54 27.5-33 2.051-2.46H35.5z" fill="#2A4D86" fill-opacity="0" stroke="#5183D3" stroke-width="3"/></svg>
-                <span  class="signupText">Sign up</span>
+                <svg
+                  width="195"
+                  height="39"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="signupBtn"
+                    d="M35.5 1.5h-.687l-.448.52-28.5 33-2.142 2.48h157.98l.449-.54 27.5-33 2.051-2.46H35.5z"
+                    fill="#2A4D86"
+                    fill-opacity="0"
+                    stroke="#5183D3"
+                    stroke-width="3"
+                  />
+                </svg>
+                <span class="signupText">Sign up</span>
               </div>
-             </label>
-          </form> 
+            </label>
+          </form>
         </div>
       </div>
       <div class="share">
@@ -258,26 +383,41 @@
         </div>
       </div>
     </main>
-    
+
     <footer>
       <nav class="socialMedia">
-          <a class="youtube" href="https://www.youtube.com"><i class="fa fa-youtube-play fa-inverse fa-2x" ></i></a>
-          <a class="github" href="https://www.github.com"><i class="fa fa-github fa-inverse fa-2x" aria-hidden="true"></i></a>
-          <a class="instagram" href="https://www.instagram.com"><i class="fa fa-instagram fa-inverse fa-2x" aria-hidden="true"></i></a>
-          <a class="twitter" href="http://www.twitter.com"><i class="fa fa-twitter fa-inverse fa-2x" aria-hidden="true"></i></a>
-          <a class="facebook" href="https://www.facebook.com"><i class="fa fa-facebook-official fa-inverse fa-2x" aria-hidden="true"></i></a>
-          <a class="linkedin" href="https://www.linkedin.com"><i class="fa fa-linkedin fa-inverse fa-2x" aria-hidden="true"></i></a>
+        <a class="youtube" href="https://www.youtube.com"
+          ><i class="fa fa-youtube-play fa-inverse fa-2x"></i
+        ></a>
+        <a class="github" href="https://www.github.com"
+          ><i class="fa fa-github fa-inverse fa-2x" aria-hidden="true"></i
+        ></a>
+        <a class="instagram" href="https://www.instagram.com"
+          ><i class="fa fa-instagram fa-inverse fa-2x" aria-hidden="true"></i
+        ></a>
+        <a class="twitter" href="http://www.twitter.com"
+          ><i class="fa fa-twitter fa-inverse fa-2x" aria-hidden="true"></i
+        ></a>
+        <a class="facebook" href="https://www.facebook.com"
+          ><i
+            class="fa fa-facebook-official fa-inverse fa-2x"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <a class="linkedin" href="https://www.linkedin.com"
+          ><i class="fa fa-linkedin fa-inverse fa-2x" aria-hidden="true"></i
+        ></a>
       </nav>
       <p class="copyright">© Peugeot 2020</p>
       <nav class="navBottom">
-          <a class="navBotItem about" href="">About us</a>
-          <a class="navBotItem legal" href="">Legal Notice</a>
-          <a class="navBotItem media" href="">Media</a>
-          <a class="navBotItem career" href="">Career</a>
-          <a class="navBotItem coc" href="">Code of conduct</a>
-          <a class="navBotItem contact" href="">Contact</a>
+        <a class="navBotItem about" href="">About us</a>
+        <a class="navBotItem legal" href="">Legal Notice</a>
+        <a class="navBotItem media" href="">Media</a>
+        <a class="navBotItem career" href="">Career</a>
+        <a class="navBotItem coc" href="">Code of conduct</a>
+        <a class="navBotItem contact" href="">Contact</a>
       </nav>
-  </footer>
+    </footer>
   </body>
   <script src="https://use.fontawesome.com/773b2bd10c.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
@@ -287,5 +427,4 @@
   <script src="./scripts/animations.js"></script>
   <script src="./scripts/transitions.js"></script>
   <script src="./scripts/app.js"></script>
-
 </html>
