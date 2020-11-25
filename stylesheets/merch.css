@@ -9,28 +9,16 @@
 }
 
 .container {
-  /*  border: solid 2px white; */
   margin: 0px;
 }
 .sliderTop {
   height: 80vh;
-  /* background-image: url(../assets/cupholder_liggandes_post.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center; */
+
   display: flex;
   flex-direction: column;
   max-width: 100%;
   position: relative;
-  /* border: 1px solid white; */
 }
-/* .carouselImage {
-    max-height: 100%;
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center; */
 
 .lower {
   display: flex;
@@ -38,22 +26,15 @@
 }
 .lowerLeft {
   width: 50%;
-  /* background-image: url(../assets/cupholder_fram_post.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center; */
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  /* border: solid 1px white; */
   margin: 0;
 }
 .accessories {
   align-self: center;
   justify-self: center;
   width: 100%;
-  /* height: 100%; */
-  /* object-fit: contain; */
 }
 
 .lowerRight {
@@ -62,12 +43,10 @@
 }
 .lowerRightTop {
   height: 50%;
-  /* border: solid 1px white; */
   margin: 0;
 }
 .lowerRightBot {
   height: 50%;
-  /* border: solid 1px white; */
   margin: 0;
 }
 
@@ -110,18 +89,13 @@ h2 {
   height: 43px;
   border-radius: 15px;
   box-shadow: 1px 1px 5px;
-
-  /* margin: 20%; */
 }
 .carousel {
   position: absolute;
-  /* left: 50px; */
   height: 90%;
   bottom: 0;
   display: flex;
-  /* align-items: flex-end; */
   overflow-x: hidden;
-  /* border: solid 1px white; */
   scroll-snap-type: x mandatory;
 }
 .textCarousel {
@@ -132,7 +106,6 @@ h2 {
 }
 .item {
   min-width: 100%;
-  /* border: 1px solid black; */
   scroll-snap-align: center;
   position: relative;
 }
