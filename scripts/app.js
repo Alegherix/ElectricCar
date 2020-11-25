@@ -22,7 +22,23 @@ function closeBurger() {
 // Samt ett text element som indikerar att formen har submittats
 const validateForm = (event) => {
   event.preventDefault();
+  // Reset Form
+  const form = document.querySelector('form');
+  const input = document.querySelector('input');
 
+  input.value = '';
+  const signedUp = document.createElement('p');
+  signedUp.classList.add('signedUp');
+  signedUp.textContent = "You've been signed up for the mailing list";
+
+  form.appendChild(signedUp);
+  setTimeout(() => {
+    document.querySelector('.signedUp').remove();
+  }, 5000);
+
+  // document.querySelector('input').value = '';
+
+  // input.textContent = '';
   return false;
 };
 
@@ -30,7 +46,6 @@ const validateForm = (event) => {
 function changeImage(img) {
   const carImg = document.querySelector('.electricColoringImg');
   const colorRegex = new RegExp('(red)|(blue)|(black)');
-  // console.log(img.src);
   const buttonColor = img.src.match(colorRegex)[0];
 
   const tl = gsap.timeline();

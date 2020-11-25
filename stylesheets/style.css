@@ -425,3 +425,8 @@ a {
   z-index: 10;
   pointer-events: none;
 }
+
+.signedUp {
+  color: var(--skyColor);
+  margin: 1rem 0;
+}
