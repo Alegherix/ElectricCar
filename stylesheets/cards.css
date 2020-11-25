@@ -55,6 +55,7 @@ section.featureCard > figcaption > img {
   align-items: center;
 }
 .featureCard img.fetureArrowsHover {
+  display: none;
   top: 1px;
   z-index: 2;
   height: 59px;
@@ -142,6 +143,7 @@ section.featureCard > figcaption > img {
     height: 72px;
   }
   .featureCard img.fetureArrowsHover {
+    display: unset;
     width: 435px;
     height: 108px;
     left: 33px;
