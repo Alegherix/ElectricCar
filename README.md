@@ -4,7 +4,7 @@
 
 ## About the project
 
-In this assignment, the two classes Web Development and Computer Graphics at YRGO teamed up to make a landing page for the fictional company Peugeot and their upcoming product Electric.
+In this assignment, the two classes Web Development and Computer Graphical Design at YRGO teamed up to make a landing page for the fictional company Peugeot and their upcoming product Electric.
 The goal was to create a fitting presentation for the future product.
 
 The web developers were mainly focusing on the design and coding and the boys and girls over att Computer Graphical Design made 3D-pictures of the vehicle.
