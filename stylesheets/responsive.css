@@ -62,14 +62,14 @@
 @media screen and (min-width: 1024px) {
   /* Navigation styling */
 
-  nav {
+  .headerNav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     /* justify-content: center; */
   }
 
-  nav ul {
+  .headerNav ul {
     flex-direction: row;
     width: auto;
     margin-right: 0.5rem;
