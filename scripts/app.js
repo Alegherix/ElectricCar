@@ -21,6 +21,15 @@ const styleNav = () => {
   } else if (document.title === 'Exterior') {
     const page = document.querySelector('#exteriorLnk a');
     page.style.cssText = 'border-bottom:2px solid white;';
+  } else if (document.title === 'History') {
+    const page = document.querySelector('#historyLnk a');
+    page.style.cssText = 'border-bottom:2px solid white;';
+  } else if (document.title === 'Merchandise') {
+    const page = document.querySelector('#marchLnk a');
+    page.style.cssText = 'border-bottom:2px solid white;';
+  } else if (document.title === 'Technical Specification') {
+    const page = document.querySelector('#specLnk a');
+    page.style.cssText = 'border-bottom:2px solid white;';
   }
 };
 

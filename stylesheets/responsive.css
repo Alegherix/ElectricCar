@@ -1,37 +1,4 @@
 @media screen and (min-width: 768px) {
-  /* Navigation styling */
-
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* justify-content: center; */
-  }
-
-  nav ul {
-    flex-direction: row;
-    width: auto;
-    margin-right: 0.5rem;
-  }
-
-  .navlinks {
-    width: auto;
-  }
-
-  .burgerContainer {
-    display: none;
-  }
-
-  .navlinks,
-  #electric {
-    display: flex;
-  }
-
-  #electric {
-    font-size: 20px;
-    font-family: 'dosis';
-  }
-
   /* Signup Styling */
   .signup {
     margin-top: 100px;
@@ -93,6 +60,39 @@
 }
 
 @media screen and (min-width: 1024px) {
+  /* Navigation styling */
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  nav ul {
+    flex-direction: row;
+    width: auto;
+    margin-right: 0.5rem;
+  }
+
+  .navlinks {
+    width: auto;
+  }
+
+  .burgerContainer {
+    display: none;
+  }
+
+  .navlinks,
+  #electric {
+    display: flex;
+  }
+
+  #electric {
+    font-size: 20px;
+    font-family: 'dosis';
+  }
+
   .coloringContainer {
     margin-bottom: 15rem;
   }
