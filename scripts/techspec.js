@@ -12,7 +12,7 @@ hovers.forEach((hovers) => {
   hovers.addEventListener("mouseover", function (e) {
     console.log(e.target);
     e.target.classList.toggle("show");
-    setTimeout(() => e.target.classList.remove("show"), 3000);
+    setTimeout(() => e.target.classList.remove("show"), 1500);
   });
   //    hovers.addEventListener("mouseleave", function(e){
   //        e.target.classList.remove("show");
