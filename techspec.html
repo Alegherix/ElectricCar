@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/tonystar/float-label-css/v1.0.2/dist/float-label.min.css"
+    />
+    <link rel="stylesheet" href="stylesheets/hamburger.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/responsive.css" />
+    <link rel="stylesheet" href="stylesheets/interior-exterior.css" />
+    <link rel="stylesheet" href="stylesheets/techspec.css" />
+
+    <title>Tech Spec.</title>
+  </head>
+  <body data-barba="wrapper">
+    <!-- Används enbart för Page Transitions -->
+
+    <div class="loadingContainer">
+      <div class="loadingScreen"></div>
+    </div>
+
+    <header>
+      <nav>
+        <div class="logo"><a href="#">Peugeot</a></div>
+        <div class="burgerContainer">
+          <button class="hamburger hamburger--emphatic" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <div id="electric"><p>Electric</p></div>
+        <div class="navlinks">
+          <ul>
+            <li id="homeLnk"><a href="index.html">Home</a></li>
+            <li id="exteriorLnk"><a href="exterior.html">Exterior</a></li>
+            <li id="interiorLnk"><a href="interior.html">Interior</a></li>
+            <li id="marchLnk"><a href="merch.html">Accessories</a></li>
+            <li id="specLnk"><a href="techspec.html">Tech Spec.</a></li>
+            <li id="historyLnk"><a href="history.html">History</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="carTech">
+        <div class="engine" onclick="hoverText(this);"></div>
+        <section class="hoverText">
+          <h2>GE90 engine</h2>
+          <p class="hoverText">
+            The heart of the car is kept in the reaer. The Electric GE90 engine
+            is a technical marvel.
+            <a href="exterior.html">Learn more</a>
+          </p>
+        </section>
+        <div class="plane" onclick="hoverText(this)"></div>
+        <section class="hoverText">
+          <h2>Aerodynamically designed</h2>
+          <p class="hoverText">
+            With Elctreics slick Aerodynamicall design combined With the
+            Electric Rotx 90 engine, it makes for a smoth and easy flight.
+            <a href="exterior.html">Learn more</a>
+          </p>
+        </section>
+        <div class="seatHeat" onclick="hoverText(this)"></div>
+        <section class="hoverText">
+          <h2>Improved Seatwarming technologys</h2>
+          <p class="hoverText">
+            Build with Orion Motor Techs latest model of seat heater systems,
+            you can forget about the normally chilly comersial flights!
+          </p>
+        </section>
+        <div class="gps" onclick="hoverText(this)"></div>
+        <section class="hoverText">
+          <h2>GPS sytems build for a cloudy day</h2>
+          <p class="hoverText">
+            Cloud feeling heavy today? No worries, Electric comes equiped with
+            the latest Spy Tec STI GL300 GPS system to show the ground even
+            through the thickest of clouds.
+          </p>
+        </section>
+        <div class="airBag" onclick="hoverText(this)"></div>
+        <section class="hoverText">
+          <h2>Improved AirBag technology</h2>
+          <p class="hoverText">
+            Feel secure on the groud or in air with the latest Air Lift 60818
+            arbags. They'll deploy in a split second and will keep you safe for
+            ever.
+          </p>
+        </section>
+        <img src="assets/techspecV2.webp" alt="technical specififcations" />
+      </section>
+
+      <section class="specififcations">
+        <h1>Technical Specififcations</h1>
+        <section class="mobileTextSpec">
+          <p>
+            Electric is a very high technological car with many neat features.
+            We have compiled a list of all avilble features below.
+          </p>
+          <figure>
+            <img src="assets/icons/Engine.webp" alt="" />
+          </figure>
+          <h2>GE90 engine</h2>
+          <p class="hoverText">
+            The heart of the car is kept in the reaer. The Electric GE90 engine
+            is a technical marvel.
+            <a href="exterior.html">Learn more</a>
+          </p>
+          <figure>
+            <img src="assets/icons/Aero.webp" alt="" />
+          </figure>
+          <h2>Aerodynamically designed</h2>
+          <p class="hoverText">
+            With Elctreics slick Aerodynamicall design combined With the
+            Electric Rotx 90 engine, it makes for a smoth and easy flight.
+            <a href="exterior.html">Learn more</a>
+          </p>
+          <figure>
+            <img src="assets/icons/SeatWarmer.webp" alt="" />
+          </figure>
+          <h2>Improved Seatwarming technologys</h2>
+          <p class="hoverText">
+            Build with Orion Motor Techs latest model of seat heater systems,
+            you can forget about the normally chilly comersial flights!
+          </p>
+          <figure>
+            <img src="assets/icons/Gps.webp" alt="" />
+          </figure>
+          <h2>GPS sytems build for a cloudy day</h2>
+          <p class="hoverText">
+            Cloud feeling heavy today? No worries, Electric comes equiped with
+            the latest Spy Tec STI GL300 GPS system to show the ground even
+            through the thickest of clouds.
+          </p>
+          <figure>
+            <img src="assets/icons/Airbag.webp" alt="" />
+          </figure>
+          <h2>Improved AirBag technology</h2>
+          <p class="hoverText">
+            Feel secure on the groud or in air with the latest Air Lift 60818
+            arbags. They'll deploy in a split second and will keep you safe for
+            ever.
+          </p>
+        </section>
+
+        <section class="generalSpecs">
+          <ul>
+            <li><strong>Weight:</strong><span>1.240 ton</span></li>
+            <li><strong>Dimensions:</strong><span>H: .99m W: 1.99m</span></li>
+            <li><strong>Seats:</strong><span>4</span></li>
+            <li><strong>Battery time:</strong><span>48h</span></li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <nav class="socialMedia">
+        <a class="youtube" href="https://www.youtube.com"
+          ><i class="fa fa-youtube-play fa-inverse fa-2x"></i
+        ></a>
+        <a class="github" href="https://www.github.com"
+          ><i class="fa fa-github fa-inverse fa-2x" aria-hidden="true"></i
+        ></a>
+        <a class="instagram" href="https://www.instagram.com"
+          ><i class="fa fa-instagram fa-inverse fa-2x" aria-hidden="true"></i
+        ></a>
+        <a class="twitter" href="http://www.twitter.com"
+          ><i class="fa fa-twitter fa-inverse fa-2x" aria-hidden="true"></i
+        ></a>
+        <a class="facebook" href="https://www.facebook.com"
+          ><i
+            class="fa fa-facebook-official fa-inverse fa-2x"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <a class="linkedin" href="https://www.linkedin.com"
+          ><i class="fa fa-linkedin fa-inverse fa-2x" aria-hidden="true"></i
+        ></a>
+      </nav>
+      <p class="copyright">© Peugeot 2020</p>
+      <nav class="navBottom">
+        <a class="navBotItem about" href="">About us</a>
+        <a class="navBotItem legal" href="">Legal Notice</a>
+        <a class="navBotItem media" href="">Media</a>
+        <a class="navBotItem career" href="">Career</a>
+        <a class="navBotItem coc" href="">Code of conduct</a>
+        <a class="navBotItem contact" href="">Contact</a>
+      </nav>
+    </footer>
+    <script src="https://use.fontawesome.com/773b2bd10c.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+    <script src="scripts/menueMarker.js"></script>
+    <script src="scripts/animations.js"></script>
+    <!-- <script src="../scripts/transitions.js"></script> -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/techspec.js"></script>
+  </body>
+</html>
