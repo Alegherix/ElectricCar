@@ -8,8 +8,8 @@ const hovers = [engine, plane, seatHeat, gps, airBag];
 
 hovers.forEach((hovers) => {
   hovers.addEventListener("mouseover", function (e) {
-    e.target.classList.toggle("show");
-    setTimeout(() => e.target.classList.remove("show"), 1500);
+    e.target.classList.add("show");
+    setTimeout(() => e.target.classList.remove("show"), 15000);
   });
   //    hovers.addEventListener("mouseleave", function(e){
   //        e.target.classList.remove("show");
