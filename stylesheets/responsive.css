@@ -29,7 +29,7 @@
 
   #electric {
     font-size: 20px;
-    font-family: 'dosis';
+    font-family: "dosis";
   }
 
   /* Signup Styling */
@@ -89,6 +89,10 @@
     position: absolute;
     z-index: -1;
     top: 14rem;
+  }
+  /* Header Stylings */
+  .safetyInfoContainer h3 {
+    margin-top: 1rem;
   }
 }
 
