@@ -11,9 +11,9 @@ The web developers were mainly focusing on the design and coding and the boys an
 
 ## Who made this?
 #### Web Developers
-- [Martin Hansson](https://https://github.com/Alegherix)
-- [Joacim Johansson](https://https://github.com/JoeyJaySWE)
-- [Victor Stranne](https://https://github.com/Vstranne)
+- [Martin Hansson](https://github.com/Alegherix)
+- [Joacim Johansson](https://github.com/JoeyJaySWE)
+- [Victor Stranne](https://github.com/Vstranne)
 #### Computer Graphical Designers
 - Emma Andersson
 - Oscar Rosdahl
@@ -26,4 +26,4 @@ The web developers were mainly focusing on the design and coding and the boys an
 
 ## Final Commit
 
-[Electric Group 9](https://https://yrgoelectric.netlify.app/)
+[Electric Group 9](https://yrgoelectric.netlify.app/)
