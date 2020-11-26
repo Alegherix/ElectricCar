@@ -26,11 +26,11 @@ section.mobileTextSpec h2 {
   padding: 0px 20px 10px 20px;
 }
 section.mobileTextSpec figure {
-  max-width: 414px;
   display: flex;
   justify-content: center;
   background-color: #162133;
-  height: 200px;
+  height: 100%;
+  padding: 50px 0px;
 }
 section.mobileTextSpec figure > img {
   max-width: 30%;
@@ -56,6 +56,33 @@ section.generalSpecs {
 section.generalSpecs > figure {
   display: none;
 }
+
+section.generalSpecs {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+section.specififcations h1 {
+  text-align: center;
+}
+
+section.generalSpecs > ul {
+  height: 200px;
+  display: flex;
+  width: 80%;
+  max-width: 600px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+section.generalSpecs > ul li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+section.generalSpecs > ul li > span {
+  color: #fff;
+  font-family: "Helvetica", "Arial", Sans-serif;
+}
 @media screen and (min-width: 768px) {
   .carTech {
     position: relative;
@@ -77,7 +104,6 @@ section.generalSpecs > figure {
   }
   .engine {
     display: block;
-    border: 3px solid red;
     height: 14%;
     width: 10%;
     position: absolute;
@@ -95,7 +121,6 @@ section.generalSpecs > figure {
   }
   .plane {
     top: 75%;
-    border: 2px solid blue;
     position: absolute;
     height: 14%;
     width: 10%;
@@ -112,7 +137,6 @@ section.generalSpecs > figure {
   }
   .seatHeat {
     top: 77%;
-    border: 2px solid green;
     position: absolute;
     height: 14%;
     width: 11%;
@@ -131,7 +155,6 @@ section.generalSpecs > figure {
   }
   .gps {
     top: 78%;
-    border: 2px solid yellow;
     position: absolute;
     height: 14%;
     width: 11%;
@@ -150,7 +173,6 @@ section.generalSpecs > figure {
   }
   .airBag {
     top: 17%;
-    border: 2px solid orange;
     position: absolute;
     height: 14%;
     width: 10%;
@@ -180,18 +202,6 @@ section.generalSpecs > figure {
     display: none;
   }
 
-  section.generalSpecs > ul {
-    height: 200px;
-    display: flex;
-    width: 240px;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  section.generalSpecs > ul li {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
   section.generalSpecs > figure {
     max-width: 300px;
     display: block;
@@ -224,18 +234,5 @@ section.generalSpecs > figure {
 
   .carTech > div.airBag.show + section.hoverText {
     height: 45%;
-  }
-
-  section.generalSpecs > ul {
-    height: 200px;
-    display: flex;
-    width: 240px;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  section.generalSpecs > ul li {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
   }
 }
