@@ -10,18 +10,24 @@ function triggerTextSlide(toAnimate, trigger) {
     stagger: 0.6,
   });
 }
+
 const animateDescText = () => {
   triggerTextSlide('.anim1', '.prodDescHeading');
   triggerTextSlide('.anim2', '.safetyHeading');
 };
 
-const animateHeader = () => {
+const animateNav = () => {
   const timeLine = gsap.timeline();
-
   timeLine
     .from('nav', { opacity: 0, duration: 1, y: -100, ease: Power2.easeOut })
     .from('.logo', { opacity: 0, duration: 0.3, y: 50 })
-    .from('.hamburger', { opacity: 0, duration: 0.3, y: -50 }, '-=0.3')
+    .from('.hamburger', { opacity: 0, duration: 0.3, y: -50 }, '-=0.3');
+};
+
+const animateHero = () => {
+  const timeLine = gsap.timeline();
+
+  timeLine
     .from('.heroText', { opacity: 0, duration: 0.8, x: -100 })
     .from('.heroHeading', { opacity: 0, duration: 1, y: 100 }, '=-0.7')
     .from(
@@ -203,15 +209,22 @@ const animateInterior = () => {
   });
 };
 
-animateHeader();
-animateDescText();
-animateColoringTimeline();
-if (window.outerWidth >= 1024) {
-  animateExterior();
-}
+const mainAnimation = () => {
+  animateNav();
+  if (document.title === 'Electric') {
+    animateHero();
+    animateDescText();
+    animateColoringTimeline();
+    if (window.outerWidth >= 1024) {
+      animateExterior();
+    }
 
-animateTech();
-animateHistory();
+    animateTech();
+    animateHistory();
 
-animateMerch();
-animateInterior();
+    animateMerch();
+    animateInterior();
+  }
+};
+
+mainAnimation();

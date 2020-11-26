@@ -1,11 +1,9 @@
-/*# sourceMappingURL=style.css.map */
 @import url('variables.css');
 @import url('historyStyling.css');
 @import url('mobileFeatureCard.css');
 @import url('footer.css');
 @import url('footermedia.css');
 @import url('cards.css');
-/* Default Styling */
 
 * {
   -webkit-box-sizing: border-box;
