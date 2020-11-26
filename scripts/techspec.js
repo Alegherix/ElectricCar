@@ -6,11 +6,8 @@ const airBag = document.querySelector(".airBag");
 
 const hovers = [engine, plane, seatHeat, gps, airBag];
 
-console.log(hovers);
-
 hovers.forEach((hovers) => {
   hovers.addEventListener("mouseover", function (e) {
-    console.log(e.target);
     e.target.classList.toggle("show");
     setTimeout(() => e.target.classList.remove("show"), 1500);
   });
@@ -20,7 +17,6 @@ hovers.forEach((hovers) => {
 });
 
 function hoverText(e) {
-  console.log(e);
   e.classList.toggle("show");
   // document.addEventListener("click", function(click){
   //     let divs = document.querySelectorAll("section.carSpec div.show");
