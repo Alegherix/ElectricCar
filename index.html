@@ -26,7 +26,7 @@
     </div>
 
     <header>
-      <nav>
+      <nav class="headerNav">
         <div class="logo"><a href="index.html#homeLnk">Peugeot</a></div>
         <div class="burgerContainer">
           <button class="hamburger hamburger--emphatic" type="button">
@@ -35,13 +35,14 @@
             </span>
           </button>
         </div>
-        <div id="electric"><p>Electric</p></div>
+        <div id="electric"><img class="logoImg" src="assets/Vit_S.webp" /></div>
         <div class="navlinks">
           <ul>
             <li id="homeLnk"><a href="index.html">Home</a></li>
             <li id="exteriorLnk"><a href="exterior.html">Exterior</a></li>
             <li id="interiorLnk"><a href="interior.html">Interior</a></li>
             <li id="marchLnk"><a href="merch.html">Accessories</a></li>
+            <li id="specLnk"><a href="techspec.html">Tech Spec.</a></li>
             <li id="historyLnk"><a href="history.html">History</a></li>
           </ul>
         </div>
@@ -56,7 +57,7 @@
               media="(min-width: 768px)"
               srcset="./assets/hero_wide.webp"
             />
-            <img src="./assets/hero.webp" alt="img" />
+            <img src="./assets/hero_M.webp" alt="img" />
           </picture>
           <div class="heroTextContainer">
             <p class="heroText"><span>You are special</span></p>
@@ -97,9 +98,10 @@
         <div class="safetyInfoContainer">
           <h3 class="anim2 safetyHeading">Safety</h3>
           <p class="anim2 safetyInfoText">
-            Kraftigt krockskydd Model S är byggd från grunden för att vara en
-            elbil med höghållfast konstruktion och ett golvmonterat batteripaket
-            vilket ger ett otroligt krockskydd.
+            Electric comes with a new generation airbag protection to keep you
+            safe at all times. On top of that, this new car has a groundbreaking
+            structural construction making it extremely durable even though it's
+            light weight. This is the future when it comes to safety!
           </p>
         </div>
       </section>
@@ -340,7 +342,7 @@
         </div>
         <div class="signupInfoContainer">
           <p>
-            Sing up today and get a free cup holder when you preorder your own
+            Sing up today and get a free cup holder when you pre order your own
             <span>Electric</span>
           </p>
           <form action="" onsubmit="return validateForm(event);">
