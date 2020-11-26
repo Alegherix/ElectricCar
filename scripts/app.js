@@ -11,15 +11,28 @@ const addBurgerListener = () => {
   });
 };
 
-function closeBurger() {
-  const burgerButton = document.querySelector('.hamburger');
-  const navigation = document.querySelector('.navlinks');
-  burgerButton.classList.remove('is-active');
-  navigation.style.display = 'none';
-}
+const styleNav = () => {
+  if (document.title === 'Electric') {
+    const page = document.querySelector('#homeLnk a');
+    page.style.cssText = 'border-bottom:2px solid white;';
+  } else if (document.title === 'Interior') {
+    const page = document.querySelector('#interiorLnk a');
+    page.style.cssText = 'border-bottom:2px solid white;';
+  } else if (document.title === 'Exterior') {
+    const page = document.querySelector('#exteriorLnk a');
+    page.style.cssText = 'border-bottom:2px solid white;';
+  } else if (document.title === 'History') {
+    const page = document.querySelector('#historyLnk a');
+    page.style.cssText = 'border-bottom:2px solid white;';
+  } else if (document.title === 'Merchandise') {
+    const page = document.querySelector('#marchLnk a');
+    page.style.cssText = 'border-bottom:2px solid white;';
+  } else if (document.title === 'Technical Specification') {
+    const page = document.querySelector('#specLnk a');
+    page.style.cssText = 'border-bottom:2px solid white;';
+  }
+};
 
-// Sätt upp form clearing
-// Samt ett text element som indikerar att formen har submittats
 const validateForm = (event) => {
   event.preventDefault();
   // Reset Form
@@ -35,13 +48,8 @@ const validateForm = (event) => {
   setTimeout(() => {
     document.querySelector('.signedUp').remove();
   }, 5000);
-
-  // document.querySelector('input').value = '';
-
-  // input.textContent = '';
   return false;
 };
-
 // Changes what type of car img is showing
 function changeImage(img) {
   const carImg = document.querySelector('.electricColoringImg');
@@ -53,7 +61,6 @@ function changeImage(img) {
     opacity: 0,
     x: 300,
     duration: 0.8,
-    // ease: Power1.easeOut,
     onComplete: () =>
       (carImg.src = carImg.src.replace(colorRegex, buttonColor)),
   })
@@ -67,6 +74,7 @@ function changeImage(img) {
 
 const main = () => {
   addBurgerListener();
+  styleNav();
 };
 
 main();

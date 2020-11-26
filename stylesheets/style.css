@@ -1,11 +1,9 @@
-/*# sourceMappingURL=style.css.map */
 @import url('variables.css');
 @import url('historyStyling.css');
 @import url('mobileFeatureCard.css');
 @import url('footer.css');
 @import url('footermedia.css');
 @import url('cards.css');
-/* Default Styling */
 
 * {
   -webkit-box-sizing: border-box;
@@ -74,7 +72,11 @@ span {
   font-size: 1.4rem;
 }
 
-nav {
+.logoImg {
+  height: 60px;
+}
+
+.headerNav {
   background-color: var(--houseColor);
   min-height: 80px;
   display: flex;
@@ -86,14 +88,14 @@ nav {
   width: 100%;
 }
 
-nav.active {
+.headerNav.active {
   height: 100vh;
   position: fixed;
   z-index: 5;
   width: 100%;
 }
 
-nav ul.active {
+.headerNav ul.active {
   height: 100vh;
   margin-top: 6rem;
 }
@@ -102,24 +104,24 @@ nav ul.active {
   display: flex;
 }
 
-nav ul {
+.headerNav ul {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-nav ul li {
+.headerNav ul li {
   list-style: none;
   text-align: center;
 }
 
-nav ul li a {
+.headerNav ul li a {
   text-decoration: none;
   padding: 1rem;
   display: block;
 }
 
-nav ul li a:hover {
+.headerNav ul li a:hover {
   background-color: #263856;
 }
 
@@ -246,17 +248,6 @@ main .heroContainer img {
 .features a {
   text-decoration: none;
 }
-
-/* Technical Specification Styling */
-
-/* History  Styling */
-
-/* Sätter placeholders för att få ett hum om hur delarna nedanför ser ut */
-/* .history {
-  width: 100%;
-  height: 226px;
-  background-color: #262626;
-} */
 
 /* Signup Styling */
 
